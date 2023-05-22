@@ -1,0 +1,23 @@
+---
+const label = Astro.props.label
+---
+
+<button>{label}</button>
+
+<style>
+    button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: var(--br-5);
+    border: none;
+    background-color: initial;
+    padding: 0 1em;
+    font-weight: var(--navbutton-desk-font-weight);
+    font-size: var(----navbutton-desk-font-size);
+    text-transform: var(--navbutton-desk-text-case);
+    text-decoration: var(--navbutton-desk-text-decoration);
+    color: var(--nav-text);
+    }
+</style>

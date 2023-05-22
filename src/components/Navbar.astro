@@ -1,0 +1,24 @@
+---
+import Navbutton from "../components/Navbutton.astro"
+const text = Astro.props.text;
+---
+
+<div>
+    <Navbutton label="Home"></Navbutton>
+    <Navbutton label="Programme"></Navbutton>
+    <Navbutton label="Map / booths"></Navbutton>
+    <Navbutton label="About"></Navbutton>
+    <Navbutton label="Contact"></Navbutton>
+</div>
+
+<style>
+    div {
+        display: flex;
+        width: 100%;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #fff;
+    }
+</style>
