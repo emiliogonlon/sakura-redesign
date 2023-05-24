@@ -1,3 +1,29 @@
 * {
     font-family: var(--sans);
+    text-decoration: none;
 }
+
+header {
+    display: flex;
+    height: 162px;
+}
+
+h1 {
+    font-weight: var(--h1-desktop-font-weight);
+    font-size: var(--h1-desktop-font-size);
+    break-after: var(--h1-mobile-paragraph-spacing);
+}
+
+h2 {
+    font-weight: var(--h2-desktop-font-weight);
+    font-size: var(--h2-desktop-font-size);
+    break-after: var(--h2-desktop-paragraph-spacing);
+}
+
+p {
+    font-weight: var(--body-text-desktop-font-weight);
+    line-height: var(--body-text-desktop-line-height);
+    font-size: var(--body-text-desktop-font-size);
+    break-after: var(--body-text-desktop-paragraph-spacing);
+}
+

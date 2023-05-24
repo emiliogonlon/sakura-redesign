@@ -1,5 +1,6 @@
 ---
-import Navbar from "../components/Navbar.astro"
+import Header from "../components/Header.astro"
+import Herosection from "../components/Herosection.astro"
 ---
 
 <html lang="en">
@@ -13,7 +14,10 @@ import Navbar from "../components/Navbar.astro"
 		<title>Astro</title>
 	</head>
 	<body>
+		<header>
+			<Header/>
+		</header>
 		<h1>Astro</h1>
-		<Navbar text="mierda"></Navbar>
+		<Herosection />
 	</body>
 </html>

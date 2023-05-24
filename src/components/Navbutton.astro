@@ -1,23 +1,41 @@
 ---
 const label = Astro.props.label
+const path = Astro.props.path
 ---
 
-<button>{label}</button>
+<li><a href = {path}>{label}</a></li>
 
 <style>
-    button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-radius: var(--br-5);
-    border: none;
-    background-color: initial;
-    padding: 0 1em;
-    font-weight: var(--navbutton-desk-font-weight);
-    font-size: var(----navbutton-desk-font-size);
-    text-transform: var(--navbutton-desk-text-case);
-    text-decoration: var(--navbutton-desk-text-decoration);
-    color: var(--nav-text);
+    li {
+        display: flex;
+        height: 100%;
+        border-radius: var(--br-5);
+        border: none;
+        background-color: initial;
+        font-weight: var(--navbutton-desk-font-weight);
+        font-size: var(----navbutton-desk-font-size);
+        text-transform: var(--navbutton-desk-text-case);
+        transition: .2s;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        align-content: center;
+        padding: 0 1em;
+        text-decoration: var(--navbutton-desk-text-decoration);
+        color: var(--nav-text);
+    }
+
+    li:hover {
+        background-color: var(--nav-bg-hovered);
+        scale: 110%;
+    }
+
+    li:active {
+        background-color: var(--nav-bg-current);
+        color: var(--white-text);
+        scale: 100%;
     }
 </style>

@@ -1,0 +1,40 @@
+---
+import Navbar from "../components/Navbar.astro"
+import Logo from "../components/Logo.astro"
+import SoMe from "../components/SoMe.astro"
+---
+
+<div id="header">
+    <div id="headertop">
+        <a href="index.html">
+            <Logo />
+        </a>
+        <div id="someholder">
+            <SoMe />
+        </div>
+    </div>
+    <Navbar/>
+</div>
+
+<style>
+    #header {
+        display: grid;
+        grid-template-rows: 130px 32px;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #headertop {
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(44.12% 16.57% at 50% 100%, #DDF5FF 0%, #F6F6F6 100%);
+    }
+    #someholder {
+        position: absolute;
+        bottom: 32px;
+        right: 0;
+        margin: var(--spacing-normal);
+    }
+</style>
