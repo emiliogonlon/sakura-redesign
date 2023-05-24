@@ -1,11 +1,39 @@
 ---
 import Herobanner from "../components/Herobanner.astro"
+import Navarrow from "../components/Navarrow.astro"
 ---
-
+<h2 hidden>Highlights</h2>
 <div id="heroframe">
+    <div id="rightarrow">
+        <Navarrow/>
+    </div>
     <Herobanner />
+    <div id="leftarrow">
+        <Navarrow/>
+    </div>
 </div>
 
 <style>
+    #rightarrow {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        right: var(--spacing-normal);
 
+    }
+    #leftarrow {
+        position: absolute;
+        top: 50%;
+        left: var(--spacing-normal);
+
+    }
+    #heroframe {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-height: 50vh;
+        min-height: 200px;
+        border-radius: var(--br-image);
+        overflow: clip;
+    }
 </style>
