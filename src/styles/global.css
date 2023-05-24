@@ -21,6 +21,7 @@
 * {
     font-family: var(--sans);
     text-decoration: none;
+    color: var(--textcolor);
 }
 
 header {
@@ -51,5 +52,14 @@ p {
     line-height: var(--body-text-desktop-line-height);
     font-size: var(--body-text-desktop-font-size);
     break-after: var(--body-text-desktop-paragraph-spacing);
+}
+
+.und {
+    text-decoration: var(--deco-underline);
+}
+
+.narsec {
+    max-width: 750px;
+    margin: auto 5%;
 }
 
