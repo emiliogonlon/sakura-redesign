@@ -1,27 +1,45 @@
 ---
-import Header from "../components/Header.astro"
-import Herosection from "../components/Herosection.astro"
-import Infomap from "../components/Infomap.astro"
+import Header from "../components/Header.astro";
+import Herosection from "../components/Herosection.astro";
+import Infomap from "../components/Infomap.astro";
 import Latestnews from "../components/Latestnews.astro";
+import Newsletter from "../components/Newsletter.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="src/styles/tokens.css">
-		<link rel="stylesheet" href="src/styles/global.css">
-		<title>Astro</title>
-	</head>
-	<body>
-		<header>
-			<Header/>
-		</header>
-		<h1>Astro</h1>
-		<Herosection />
-		<Infomap />
-		<Latestnews />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/tokens.css" />
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/styles/indexstyles.css" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <Header />
+    </header>
+    <h1>Astro</h1>
+    <Herosection />
+    <Infomap />
+    <Latestnews />
+    <Newsletter />
+    <section id="entrancesection">
+      <img src="origami_hund.svg" id="hund" alt="hund_origami" />
+      <div id="text">
+        <h2>Entrance is free</h2>
+        <p>
+          As always, the entrance to the festival is <a href="">free</a> for everyone
+        </p>
+        <p>
+          We are excited to welcome people from all over Denmark and the
+          Copenhagen area to experience some of the best Japan has to offer.
+        </p>
+      </div>
+      <a href="">LEARN MORE ABOUT THE FESTIVAL</a>
+      <img src="sakura_pink.svg" id="sakura_pink" alt="sakura_træ" />
+    </section>
+  </body>
 </html>

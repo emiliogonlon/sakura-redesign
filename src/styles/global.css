@@ -1,55 +1,97 @@
 @import url("https://p.typekit.net/p.css?s=1&k=fpy0rgl&ht=tk&f=49650.49653.51651&a=100499211&app=typekit&e=css");
 
 @font-face {
-    font-family:"articulat-cf";
-    src:url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
-    }
-    
+  font-family: "articulat-cf";
+  src: url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/91edd4/00000000000000007735faeb/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
 @font-face {
-    font-family:"articulat-cf";
-    src:url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
-    }
-    
+  font-family: "articulat-cf";
+  src: url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2eb95e/00000000000000007735faee/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+}
+
 @font-face {
-    font-family:"articulat-cf";
-    src:url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
-    }
+  font-family: "articulat-cf";
+  src: url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/072efe/0000000000000000774b9f47/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+}
 
 * {
-    font-family: var(--sans);
-    text-decoration: none;
+  font-family: var(--sans);
+  text-decoration: none;
 }
 
 header {
-    display: flex;
-    height: 162px;
+  display: flex;
+  height: 162px;
 }
 
 h1 {
-    font-weight: var(--h1-desktop-font-weight);
-    font-size: var(--h1-desktop-font-size);
-    break-after: var(--h1-mobile-paragraph-spacing);
+  font-weight: var(--h1-desktop-font-weight);
+  font-size: var(--h1-desktop-font-size);
+  break-after: var(--h1-mobile-paragraph-spacing);
 }
 
 h2 {
-    font-weight: var(--h2-desktop-font-weight);
-    font-size: var(--h2-desktop-font-size);
-    break-after: var(--h2-desktop-paragraph-spacing);
+  font-weight: var(--h2-desktop-font-weight);
+  font-size: var(--h2-desktop-font-size);
+  break-after: var(--h2-desktop-paragraph-spacing);
 }
 
 .tiletitle {
-    font-weight: var(--tile-title-desktop-font-weight);
-    font-size: var(--size-third-desktop);
-    text-transform: var(--textcase-capitalize);
+  font-weight: var(--tile-title-desktop-font-weight);
+  font-size: var(--size-third-desktop);
+  text-transform: var(--textcase-capitalize);
 }
 
 p {
-    font-weight: var(--body-text-desktop-font-weight);
-    line-height: var(--body-text-desktop-line-height);
-    font-size: var(--body-text-desktop-font-size);
-    break-after: var(--body-text-desktop-paragraph-spacing);
+  font-weight: var(--body-text-desktop-font-weight);
+  line-height: var(--body-text-desktop-line-height);
+  font-size: var(--body-text-desktop-font-size);
+  break-after: var(--body-text-desktop-paragraph-spacing);
 }
 
+.primær_knap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+
+  position: absolute;
+  width: 157px;
+  height: 43px;
+  left: calc(50% - 157px / 2 + 188.5px);
+  top: 2697px;
+
+  background: linear-gradient(266.1deg, #109ad6 -6.5%, #26c7eb 108.13%);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
