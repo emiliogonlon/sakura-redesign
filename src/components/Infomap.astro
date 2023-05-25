@@ -13,7 +13,7 @@
       Get lost in the magic of the blossoming Sakura trees and enjoy a wonderful
       weekend with your friends and familiy.
     </p>
-    <p>Get Directions</p>
+    <a href="">GET DIRECTIONS</a>
   </div>
 
   <img class="billede" src="public/map.svg" alt="kort" />
@@ -24,18 +24,36 @@
     display: flex;
     background-color: var(--bg-screens);
     border-radius: 2%;
-    grid-template-columns: 50px 50px;
+    margin: 20px;
+    padding: 10px;
   }
 
   .billede {
-    grid-column-start: 2;
-    grid-column-end: 1;
-    width: 50%;
-    margin: 20px;
+    max-height: 300px;
+    justify-self: end;
   }
   .tekst {
-    grid-column-start: 1;
-    grid-column-end: 2;
     margin: 20px;
+  }
+
+  @media screen (max-width: 1200px) {
+    .grid-container {
+      display: flex;
+      flex-flow: column;
+      background-color: var(--bg-screens);
+      border-radius: 2%;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .billede {
+      display: flex;
+      /* max-height: 300px; */
+      /* justify-self: end; */
+    }
+    .tekst {
+      display: flex;
+      margin: 20px;
+    }
   }
 </style>
