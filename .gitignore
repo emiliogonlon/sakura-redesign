@@ -23,3 +23,4 @@ pnpm-debug.log*
 .vscode
 public/elba-esther-gordillo.jpeg
 public/elba-esther-gordillo.jpg
+src/pages/tests.astro
