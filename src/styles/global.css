@@ -63,3 +63,32 @@ p {
     margin: auto 5%;
 }
 
+input {
+    border: none;
+    border-radius: var(--br-textfield);
+    background: var(--bg-textfield);
+    height: 2.5em;
+    padding: 5px 10px;
+    font-family: var(--body-text-desktop-font-family);
+    font-size: var(--body-text-desktop-font-size);
+    font-weight: var(--body-text-desktop-font-weight);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--active-shadow-color);
+}
+
+input:invalid {
+    outline: solid var(--fail);
+    box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--fail);
+}
+
+label {
+    color: var(--help);
+    font-size: var(--helptext-desk-font-size);
+    font-weight: var(--helptext-desk-font-weight);
+    font-kerning: var(--helptext-desk-letter-spacing);
+    text-transform: var(--helptext-desk-text-case);
+}
+
