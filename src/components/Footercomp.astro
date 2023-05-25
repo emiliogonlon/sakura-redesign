@@ -1,0 +1,88 @@
+---
+import Logo from "../components/Logo.astro"
+import SoMe from "../components/SoMe.astro"
+---
+
+<div id="footerblock">
+    <div id="footergrid">
+        <Logo />
+        <div id="footmid">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Rules</a></li>
+                <li><a>News</a></li>
+                <li><a>Sponsors</a></li>
+                <li><a>Archive</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            <ul>
+                <li>Participate</li>
+                <li><a>Programme</a></li>
+                <li><a>Map / Booths</a></li>
+                <li><a>Get directions</a></li>
+                <li><a>For companies / Organisations</a></li>
+            </ul>
+            <ul>
+                <li>Legal</li>
+                <li><a>Privacy notice</a></li>
+                <li><a>Use of cookies</a></li>
+            </ul>
+            <div id="footinfo">
+                Embassy of Japan<br/>
+                Havneholmen 25, 9F<br/>
+                1561 København V<br/>
+                Number<br/>
+                Fax<br/>
+                mail<br/>
+            </div>
+        </div>
+        <div id="footbottom">
+            <span>
+            © 2023 Copenhagen Sakura Festival <br/>
+        Unsolicited Web Redesign by Cecillie Andersen, Emilio González & Magnus Rosa <br/>
+        Illustrations from The Noun Project licenced under a Creative Commons Attribution 3.0 International License. </span>
+        <div id="footsome"><SoMe/></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #footerblock{
+        display: flex;
+        justify-content: center;
+        border-top-color: var(--border-footer-color);
+        border-top-width: var(--border-footer-width);
+        border-top-style: var(--border-footer-style);
+        margin-top: var(--spacing-max);
+    }
+    #footergrid{
+        display: grid;
+        grid-template:
+            "logorow" 50px
+            "linkrow" 1fr
+            "bottomrow" 40px
+            / 1fr
+    }
+    #footmid {
+        grid-row: 2;
+        display: flex;
+    }
+    ul {
+        justify-self: flex-start;
+        list-style: none;
+        padding: 0;
+        flex: 1;
+    }
+
+    #footinfo {
+        justify-self: flex-end;
+    }
+
+    #footbottom {
+        grid-row: 3;
+    }
+    #footsome {
+        grid-row:3;
+    }
+</style>
