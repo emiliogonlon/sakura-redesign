@@ -21,6 +21,7 @@
 * {
     font-family: var(--sans);
     text-decoration: none;
+    color: var(--textcolor);
 }
 
 header {
@@ -51,5 +52,44 @@ p {
     line-height: var(--body-text-desktop-line-height);
     font-size: var(--body-text-desktop-font-size);
     break-after: var(--body-text-desktop-paragraph-spacing);
+}
+
+.und {
+    text-decoration: var(--deco-underline);
+}
+
+.narsec {
+    max-width: 750px;
+    margin: auto 5%;
+}
+
+input {
+    border: none;
+    border-radius: var(--br-textfield);
+    background: var(--bg-textfield);
+    height: 2.3em;
+    padding: 0.75px 0.75em;
+    font-family: var(--body-text-desktop-font-family);
+    font-size: var(--body-text-desktop-font-size);
+    font-weight: var(--body-text-desktop-font-weight);
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--active-shadow-color);
+}
+
+input:invalid {
+    outline: solid var(--fail);
+    box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--fail);
+}
+
+label {
+    color: var(--help);
+    font-size: var(--helptext-desk-font-size);
+    font-weight: var(--helptext-desk-font-weight);
+    font-kerning: var(--helptext-desk-letter-spacing);
+    text-transform: var(--helptext-desk-text-case);
 }
 

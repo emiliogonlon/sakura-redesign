@@ -1,0 +1,124 @@
+---
+import Logo from "../components/Logo.astro"
+import SoMe from "../components/SoMe.astro"
+---
+
+<div id="footerblock">
+    <div id="footergrid">
+        <Logo />
+        <div id="footmid">
+            <div id="fmidlef">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Rules</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Sponsors</a></li>
+                    <li><a>Archive</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="footlisttitle">Participate</li>
+                    <li><a>Programme</a></li>
+                    <li><a>Map / Booths</a></li>
+                    <li><a>Get directions</a></li>
+                    <li><a>For companies / Organisations</a></li>
+                </ul>
+                <ul>
+                    <li class="footlisttitle">Legal</li>
+                    <li><a>Privacy notice</a></li>
+                    <li><a>Use of cookies</a></li>
+                </ul>
+            </div>
+            <div id="footinfo">
+                <a href="https://www.openstreetmap.org/#map=19/55.66128/12.56363" target="_blank">
+                    <p class="footlisttitle">Embassy of Japan</span><p/>
+                    <p>Havneholmen 25, 9F</p>
+                    <p>1561 København V</p>
+                </a>
+                <p><a href="tel:+4533455121">(+45) 3345 5121</a></p>
+                <p><a href="tel:+4533113377">(+45) 3311 3377</a></p>
+                <p><a href="mailto:info.cph@ch.mofa.go.jp">info.cph@ch.mofa.go.jp</a></p>
+            </div>
+        </div>
+        <div id="footbottom">
+            <div id="footfineprint">
+                <p>© 2023 Copenhagen Sakura Festival</p>
+                <p>Unsolicited Web Redesign by Cecillie Andersen, Emilio González & Magnus Rosa</p>
+                <p>Illustrations from The Noun Project licenced under a Creative Commons Attribution 3.0 International License.</p>
+            </div>
+        <div id="footsome"><SoMe/></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #footerblock{
+        display: flex;
+        justify-content: center;
+        border-top-color: var(--border-footer-color);
+        border-top-width: var(--border-footer-width);
+        border-top-style: var(--border-footer-style);
+        margin-top: var(--spacing-max);
+
+    }
+    #footergrid{
+        display: grid;
+        grid-template:
+            "logorow" auto
+            "linkrow" 1fr
+            "bottomrow" auto
+            / 90vw
+    }
+    #footmid {
+        grid-row: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #fmidlef {
+        display: flex;
+        justify-self: flex-start;
+        width: 60%;
+    }
+
+    #fmidlef ul {
+        list-style: none;
+        padding: 0;
+        flex: 1;
+        font-size: var(--footer-desk-links-font-size);
+        font-weight: var(--footer-desk-links-font-weight);
+    }
+
+    #fmidlef ul li, #footinfo p{
+        margin-bottom: var(--footer-desk-links-paragraph-spacing);
+    }
+
+    #footinfo {
+        justify-self: flex-end;
+        text-align: right;
+        font-size: var(--footer-desk-links-font-size);
+        font-weight: var(--footer-desk-links-font-weight);
+    }
+
+    #footbottom{
+        grid-row: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footfineprint p {
+        color: var(--subtle);
+        font-weight: var(--footer-desk-fine-print-font-weight);
+        font-size: 0.8rem;
+        line-height: var(--footer-desk-fine-print-paragraph-spacing);
+    }
+    #footsome {
+        grid-row:3;
+    }
+
+    .footlisttitle {
+        font-weight: var(--footer-desk-listtitle-font-weight);
+        font-size: var(--footer-desk-listtitle-font-size);
+    }
+</style>
