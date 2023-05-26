@@ -5,7 +5,7 @@ import SoMe from "../components/SoMe.astro"
 
 <div id="footerblock">
     <div id="footergrid">
-        <Logo />
+        <a href="index.html" id="logoanchor"><Logo /></a>
         <div id="footmid">
             <div id="fmidlef">
                 <ul>
@@ -62,10 +62,16 @@ import SoMe from "../components/SoMe.astro"
         margin-top: var(--spacing-max);
 
     }
+
+    #logoanchor {
+        align-self: center;
+        width: max-content;
+    }
+
     #footergrid{
         display: grid;
         grid-template:
-            "logorow" auto
+            "logorow" 100px
             "linkrow" 1fr
             "bottomrow" auto
             / 90vw
