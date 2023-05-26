@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro"
 import Herosection from "../components/Herosection.astro"
+import Footercomp from "../components/Footercomptree.astro"
 ---
 
 <html lang="en">
@@ -11,7 +12,7 @@ import Herosection from "../components/Herosection.astro"
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="src/styles/tokens.css">
 		<link rel="stylesheet" href="src/styles/global.css">
-		<title>Astro</title>
+		<title>Sakura festival - Start</title>
 	</head>
 	<body>
 		<header>
@@ -70,6 +71,8 @@ import Herosection from "../components/Herosection.astro"
 				<button class="textbutton">Learn More about the festival</button>
 			</section>
 		</main>
-		<footer>Footer here</footer>
+		<footer>
+			<Footercomp />
+		</footer>
 	</body>
 </html>
