@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Herosection from "../components/Herosection.astro";
 import Infomap from "../components/Infomap.astro";
 import Latestnews from "../components/Latestnews.astro";
+import Listkomponent from "../components/Listkomponent.astro";
 import Newsletter from "../components/Newsletter.astro";
 ---
 
@@ -38,8 +39,15 @@ import Newsletter from "../components/Newsletter.astro";
           Copenhagen area to experience some of the best Japan has to offer.
         </p>
       </div>
-      <a href="">LEARN MORE ABOUT THE FESTIVAL</a>
+      <a href="programme">Programme</a>
+      <a href=""
+        >LEARN MORE ABOUT THE FESTIVAL <img
+          src="arrow_right.svg"
+          alt="pil"
+        /></a
+      >
       <img src="sakura_pink.svg" id="sakura_pink" alt="sakura_træ" />
     </section>
+    <Listkomponent />
   </body>
 </html>
