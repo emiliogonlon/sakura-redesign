@@ -1,33 +1,33 @@
 ---
-import Logo from "../components/Logo.astro"
+import Logo from "../components/Logocompact.astro"
 import SoMe from "../components/SoMe.astro"
 ---
 
 <div id="footerblock">
     <div id="footergrid">
-        <Logo />
+        <a href="index.html" id="logoanchor"><Logo /></a>
         <div id="footmid">
             <div id="fmidlef">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Rules</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Sponsors</a></li>
-                    <li><a>Archive</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <ul>
                     <li class="footlisttitle">Participate</li>
-                    <li><a>Programme</a></li>
-                    <li><a>Map / Booths</a></li>
-                    <li><a>Get directions</a></li>
-                    <li><a>For companies / Organisations</a></li>
+                    <li><a href="#">Programme</a></li>
+                    <li><a href="#">Map / Booths</a></li>
+                    <li><a href="#">Get directions</a></li>
+                    <li><a href="#">For companies / Organisations</a></li>
                 </ul>
                 <ul>
                     <li class="footlisttitle">Legal</li>
-                    <li><a>Privacy notice</a></li>
-                    <li><a>Use of cookies</a></li>
+                    <li><a href="#">Privacy notice</a></li>
+                    <li><a href="#">Use of cookies</a></li>
                 </ul>
             </div>
             <div id="footinfo">
@@ -62,10 +62,16 @@ import SoMe from "../components/SoMe.astro"
         margin-top: var(--spacing-max);
 
     }
+
+    #logoanchor {
+        align-self: center;
+        width: max-content;
+    }
+
     #footergrid{
         display: grid;
         grid-template:
-            "logorow" auto
+            "logorow" 100px
             "linkrow" 1fr
             "bottomrow" auto
             / 90vw
@@ -88,6 +94,7 @@ import SoMe from "../components/SoMe.astro"
         flex: 1;
         font-size: var(--footer-desk-links-font-size);
         font-weight: var(--footer-desk-links-font-weight);
+        margin-top: 0;
     }
 
     #fmidlef ul li, #footinfo p{
@@ -120,5 +127,6 @@ import SoMe from "../components/SoMe.astro"
     .footlisttitle {
         font-weight: var(--footer-desk-listtitle-font-weight);
         font-size: var(--footer-desk-listtitle-font-size);
+        margin-top: 0;
     }
 </style>
