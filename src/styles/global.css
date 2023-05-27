@@ -123,3 +123,40 @@ section {
     max-height: 350px;
     max-width: 48%;
 }
+
+/* Integration */
+.primaer_knap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  
+    width: 157px;
+    height: 43px;
+    left: calc(50% - 157px / 2 + 188.5px);
+    top: 2697px;
+  
+    background: linear-gradient(266.1deg, #109ad6 -6.5%, #26c7eb 108.13%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  
+  .almindelig_knap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  
+    width: 135px;
+    height: 48px;
+    left: 20px;
+    top: 20px;
+  
+    background: #d9d9d9;
+    box-shadow: var(--button-shadow-blur);
+    border-radius: 5px;
+  }

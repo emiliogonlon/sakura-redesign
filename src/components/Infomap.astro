@@ -1,0 +1,59 @@
+---
+---
+
+<div class="grid-container">
+  <div class="tekst">
+    <h1>Join Us at Lagelinje Park</h1>
+    <p>
+      Located right in the heart of Copenhagen, Langelinje Park hosts the Sakura
+      Festival every year.
+    </p>
+
+    <p>
+      Get lost in the magic of the blossoming Sakura trees and enjoy a wonderful
+      weekend with your friends and familiy.
+    </p>
+    <a href="">GET DIRECTIONS <img src="arrow_right.svg" alt="pil" /></a>
+  </div>
+
+  <img class="billede" src="public/map.svg" alt="kort" />
+</div>
+
+<style>
+  .grid-container {
+    display: flex;
+    background-color: var(--bg-screens);
+    border-radius: 2%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .billede {
+    max-height: 300px;
+    justify-self: end;
+  }
+  .tekst {
+    margin: 20px;
+  }
+
+  @media screen (max-width: 1200px) {
+    .grid-container {
+      display: flex;
+      flex-flow: column;
+      background-color: var(--bg-screens);
+      border-radius: 2%;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .billede {
+      display: flex;
+      /* max-height: 300px; */
+      /* justify-self: end; */
+    }
+    .tekst {
+      display: flex;
+      margin: 20px;
+    }
+  }
+</style>

@@ -2,6 +2,10 @@
 import Header from "../components/Header.astro"
 import Herosection from "../components/Herosection.astro"
 import Footercomp from "../components/Footercomptree.astro"
+import Infomap from "../components/Infomap.astro";
+import Latestnews from "../components/Latestnews.astro";
+import Listkomponent from "../components/Listkomponent.astro";
+import Newsletter from "../components/Newsletter.astro";
 ---
 
 <html lang="en">
@@ -33,11 +37,12 @@ import Footercomp from "../components/Footercomptree.astro"
 				</p>
 			</section>
 			<div>
-				[InfoMap]
+				<Infomap />
 			</div>
 			<section>
 				<h2>
 					Latest News
+					<Latestnews />
 				</h2>
 			</section>
 			<section id="newslettersection">
@@ -58,18 +63,29 @@ import Footercomp from "../components/Footercomptree.astro"
 					<button>Sign up</button>
 				</div>
 			</section>
-			<section>
-				<h2>
-					Entrance is free
-				</h2>
-				<p>
-					As always, the entrance to the festival is free for everyone.
-				</p>
-				<p>
-					We are excited to welcome people from all over Denmark and the Copenhagen area to experience some of the best Japan has to offer.
-				</p>
-				<button class="textbutton">Learn More about the festival</button>
-			</section>
+			<Newsletter />
+    <section id="entrancesection">
+      <img src="origami_hund.svg" id="hund" alt="hund_origami" />
+      <div id="text">
+        <h2>Entrance is free</h2>
+        <p>
+          As always, the entrance to the festival is <a href="">free</a> for everyone
+        </p>
+        <p>
+          We are excited to welcome people from all over Denmark and the
+          Copenhagen area to experience some of the best Japan has to offer.
+        </p>
+      </div>
+      <a href="programme">Programme</a>
+      <a href=""
+        >LEARN MORE ABOUT THE FESTIVAL <img
+          src="arrow_right.svg"
+          alt="pil"
+        /></a
+      >
+      <img src="sakura_pink.svg" id="sakura_pink" alt="sakura_træ" />
+    </section>
+    <Listkomponent />
 		</main>
 		<footer>
 			<Footercomp />

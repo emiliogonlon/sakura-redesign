@@ -1,0 +1,70 @@
+---
+import Listkomponent from "../components/Listkomponent.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/tokens.css" />
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/styles/indexstyles.css" />
+    <title>Programme</title>
+  </head>
+  <body>
+    <header>
+      <Header />
+    </header>
+    <h1>2024 Programme</h1>
+    <button>SORT BY <img src="list_arrows.svg" alt="" /></button>
+    <section>
+      <h2>Saturday 18 March</h2>
+      <ul>
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+      </ul>
+    </section>
+    <section>
+      <h2>Sunday 19 March</h2>
+      <ul>
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+        <Listkomponent />
+      </ul>
+    </section>
+    <div id="back_to_top">
+      <h2>That's all.</h2>
+      <button>BACK TO TOP <img src="pil_op.svg" alt="pil" /></button>
+    </div>
+  </body>
+</html>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  #back_to_top {
+    text-align: center;
+  }
+</style>
