@@ -1,0 +1,18 @@
+.story{
+    max-inline-size: 52%;
+    margin: 2rem auto 0;
+    text-align:center;
+}
+
+#separator {
+    display: flex;
+    height: 300px;
+    max-width: 2000px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: var(--br-image);
+}
+
+#separator img{
+    object-fit: cover;
+}
