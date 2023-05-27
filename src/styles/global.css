@@ -71,9 +71,8 @@ p {
     color: inherit;
 }
 
-.narsec {
+.ns {
     max-width: 750px;
-    margin: auto 5%;
 }
 
 input {
