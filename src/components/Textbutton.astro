@@ -1,0 +1,20 @@
+---
+const link = Astro.props.href
+---
+
+<a class="textbutton" href={link}>
+    <span>
+        <slot name="label" />
+    </span>
+    <div id="bicon">
+        <slot name="icon" />
+    </div>
+</a>
+
+<style>
+    .textbutton{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-normal);
+    }
+</style>
