@@ -364,7 +364,3 @@
   --token-set-order-1: semantik;
   --token-set-order-2: elementer;
 }
-
-h1 {
-  color: var(--good);
-}
