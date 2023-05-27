@@ -1,0 +1,65 @@
+---
+import Header from "../components/Header.astro"
+import Footercomp from "../components/Footercomp.astro"
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="src/styles/tokens.css">
+		<link rel="stylesheet" href="src/styles/global.css">
+        <link rel="stylesheet" href="src/styles/about.css">
+		<title>Sakura festival - Start</title>
+	</head>
+    <body>
+        <header><Header/></header>
+        <main>
+            <h1>About the festival</h1>
+            <section id="aboutsakura">
+                <div class="txtpic">
+                    <div>
+                        <h2>It all started with a Cherry Blossom</h2>
+                        <p>
+                            The original idea came from the noble deed of donation of 200 cherry blossom (Sakura) trees by Mr. Seiichi Takaki, President of Andersen Institute of Bread & Life, the holding company of Andersen Group of Hiroshima City, and the employees of the company. 
+                        </p>
+                        <p>
+                            The donated trees were planted in Langelinie Park. Mr. Takaki is Honorary Consul of Denmark and he was appointed to the honorable position of ambassador of H.C. Andersen on the occasion of the 200th anniversary of H.C. Andersen's birthday in 2005. The donated Sakura trees were planted in Langelinie Park.
+                        </p>
+                    </div>
+                    <img src="public/elba-esther-gordillo.jpeg">
+                </div>
+                <div class="txtpic">
+                    <img src="public/elba-esther-gordillo.jpg" alt="" srcset="">
+                    <div>
+                        <h2>
+                            The magic of Sakura Trees
+                        </h2>
+                        <p>
+                            In Japan people love and admire Sakura blossom and almost everybody go out to enjoy its beauty together with families, friends, lovers, office-mates and so forth wherever and whenever Sakura bloom. Once a year Sakura connects people and people meet people under Sakura trees. It is also the utmost and fundamental goal of the Committee.
+                        </p>
+                    </div>
+                </div>
+                <p class="story">
+                    The Committee of the Copenhagen Sakura Festival was established in February, 2008 to arrange the cultural event Copenhagen Sakura Festival with the help of the Japanese Embassy in Denmark, the Municipality of Copenhagen and other Japan-related cultural and private organizations.
+                </p>
+                <p class="story">
+                    The Committee has an honor to have Honorable Chairpersons H.E. the Ambassador of Japan to Denmark and Lord Mayor of the City of Copenhagen. The Committee consists of representatives of Japan related business, cultural and private organizations, the Municipality of Copenhagen and the Japanese Embassy.
+                </p>
+            </section>
+            <div id="separator">
+                <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+            </div>
+            <section id="sponsors">
+                <h2>Meet our sponsors</h2>
+                <div id="sponsorsmosaic">
+                    <div id="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer><Footercomp/></footer>
+    </body>
+</html>
