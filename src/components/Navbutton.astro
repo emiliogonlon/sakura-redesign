@@ -3,7 +3,7 @@ const label = Astro.props.label
 const path = Astro.props.path
 ---
 
-<li><a href = {path}>{label}</a></li>
+<li id={path}><a href = {path}>{label}</a></li>
 
 <style>
     li {
@@ -16,6 +16,10 @@ const path = Astro.props.path
         font-size: var(----navbutton-desk-font-size);
         text-transform: var(--navbutton-desk-text-case);
         transition: .2s;
+    }
+
+    li:target {
+        background-color: var(--nav-bg-current);
     }
 
     a {
