@@ -125,6 +125,7 @@ section {
 }
 
 iframe {
+    border: none;
     border-radius: var(--br-image);
 }
 
