@@ -124,6 +124,10 @@ section {
     max-width: 48%;
 }
 
+iframe {
+    border-radius: var(--br-image);
+}
+
 /* Integration */
 .primaer_knap {
     display: flex;
