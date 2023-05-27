@@ -33,3 +33,21 @@
     height: 150px;
     overflow: hidden;
 }
+
+#rulesframe {
+    background-color: var(--bg-textfield);
+    border-radius: var(--br-image);
+    max-height: 50vh;
+    overflow-y: scroll;
+    padding: 3em 6em;
+    line-height: var(--lineheight-readable);
+}
+
+#rulesframe li {
+    color: var(--lighttext);
+    margin-bottom: 1em;
+}
+
+#rulesframe h2 {
+    margin-bottom: 1.5em;
+}
