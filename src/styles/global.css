@@ -33,12 +33,14 @@ h1 {
     font-weight: var(--h1-desktop-font-weight);
     font-size: var(--h1-desktop-font-size);
     break-after: var(--h1-mobile-paragraph-spacing);
+    text-align: center;
 }
 
 h2 {
     font-weight: var(--h2-desktop-font-weight);
     font-size: var(--h2-desktop-font-size);
-    break-after: var(--h2-desktop-paragraph-spacing);
+    line-height: 0.8em;
+    text-align: center;
 }
 
 .tiletitle {
@@ -48,10 +50,11 @@ h2 {
 }
 
 p {
+    font-family: var(--body-text-desktop-font-family);
     font-weight: var(--body-text-desktop-font-weight);
     line-height: var(--body-text-desktop-line-height);
     font-size: var(--body-text-desktop-font-size);
-    break-after: var(--body-text-desktop-paragraph-spacing);
+    margin-bottom: var(--body-text-desktop-paragraph-spacing);
 }
 
 .und {
@@ -93,3 +96,24 @@ label {
     text-transform: var(--helptext-desk-text-case);
 }
 
+section {
+    max-width: 70rem;
+    margin: 5rem auto;
+}
+
+.txtpic {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.txtpic h2{
+    text-align: initial;
+}
+
+.txtpic img{
+    border-radius: var(--br-image);
+    max-height: 350px;
+    max-width: 48%;
+}
