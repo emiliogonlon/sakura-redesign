@@ -254,7 +254,7 @@
   --size-small-mobile: 0.8rem;
   --radius-standard: 5px;
   --parspacing-standard: 0.7em;
-  --kerning-broad: 5%;
+  --kerning-broad: 0.08em;
   --parspacing-none: 0;
   --white-text: #F8F8F8;
   --lighttext: #7e7e7e;

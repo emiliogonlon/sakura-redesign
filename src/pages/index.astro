@@ -16,6 +16,7 @@ import Newsletter from "../components/Newsletter.astro";
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="src/styles/tokens.css">
 		<link rel="stylesheet" href="src/styles/global.css">
+		<link rel="stylesheet" href="src/styles/indexstyles.css">
 		<title>Sakura festival - Start</title>
 	</head>
 	<body>
@@ -24,7 +25,7 @@ import Newsletter from "../components/Newsletter.astro";
 		</header>
 		<main>
 			<Herosection />
-			<span>Entrance to the festival is <span class="und">free</span> for everyone.</span>
+			<div class="notice">Entrance to the festival is <em class="und">free</em> for everyone.</div>
 			<section class="narsec">
 				<h2>
 					Where Japan and Denmark meet
@@ -91,12 +92,6 @@ import Newsletter from "../components/Newsletter.astro";
 			<Footercomp />
 		</footer>
 	</body>
-	<style>
-		#entrancesection {
-			display: flex;
-			height: 500px;
-		}
-	</style>
 	<script>
         document.getElementById('index.html').style.backgroundColor = "var(--nav-bg-current)";
         document.getElementById('index.html').firstChild.style.color = "var(--nav-currentwhite)"

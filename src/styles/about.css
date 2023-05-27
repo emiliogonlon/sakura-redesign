@@ -41,11 +41,16 @@
     overflow-y: scroll;
     padding: 3em 6em;
     line-height: var(--lineheight-readable);
+    text-align: initial;
 }
 
 #rulesframe li {
     color: var(--lighttext);
     margin-bottom: 1em;
+}
+
+#rulesframe ul:first-child{
+    margin-top: 1em;
 }
 
 #rulesframe h2 {

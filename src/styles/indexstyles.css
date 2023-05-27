@@ -1,0 +1,12 @@
+.notice {
+    color: var(--notice-blue);
+    margin: auto;
+    font-size: var(--size-third-desktop);
+    letter-spacing: var(--kerning-broad);
+    margin-top: var(--spacing-max);
+    margin-bottom: 3em;
+}
+#entrancesection {
+    display: flex;
+    height: 500px;
+}
