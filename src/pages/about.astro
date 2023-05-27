@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro"
 import Footercomp from "../components/Footercomp.astro"
 import Textbutton from "../components/Textbutton.astro"
+import Thatsall from "../components/Thatsall.astro"
 ---
 <html lang="en">
 	<head>
@@ -15,7 +16,10 @@ import Textbutton from "../components/Textbutton.astro"
 		<title>Sakura festival - Start</title>
 	</head>
     <body>
-        <header><Header/></header>
+        <header>
+            <a id="top" />
+            <Header/>
+        </header>
         <main>
             <h1>About the festival</h1>
             <section id="aboutsakura">
@@ -183,8 +187,13 @@ import Textbutton from "../components/Textbutton.astro"
                     </ol>
                 </div>
             </section>
-            
+            <Thatsall />
         </main>
         <footer><Footercomp/></footer>
+        <script>
+            document.querySelector('#top').scrollIntoView({
+                behavior: 'smooth'
+            });
+        </script>
     </body>
 </html>

@@ -24,6 +24,10 @@
     color: var(--textcolor);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     height: 162px;
