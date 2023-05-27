@@ -1,0 +1,37 @@
+---
+const link = Astro.props.href
+---
+
+<a class="textbutton" href={link}>
+    <span>
+        <slot name="label" />
+    </span>
+    <div>
+        <slot name="icon" />
+    </div>
+</a>
+
+<style>
+    .textbutton{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-normal);
+        width: fit-content;
+        margin: auto;
+        color: var(--lighttext);
+    }
+    h2, p {
+        text-align: left;
+    }
+
+    p{
+        font-weight: var(--textbutton-desk-font-weight);
+        font-size: var(--textbutton-desk-font-size);
+        letter-spacing: var(--textbutton-desk-letter-spacing);
+        text-transform: capitalize;
+    }
+
+    .islink{
+        text-decoration: var(--textbutton-link);
+    }
+</style>

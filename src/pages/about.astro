@@ -1,0 +1,199 @@
+---
+import Header from "../components/Header.astro"
+import Footercomp from "../components/Footercomp.astro"
+import Textbutton from "../components/Textbutton.astro"
+import Thatsall from "../components/Thatsall.astro"
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="src/styles/tokens.css">
+		<link rel="stylesheet" href="src/styles/global.css">
+        <link rel="stylesheet" href="src/styles/about.css">
+		<title>Sakura festival - Start</title>
+	</head>
+    <body>
+        <header>
+            <a id="top" />
+            <Header/>
+        </header>
+        <main>
+            <h1>About the festival</h1>
+            <section id="aboutsakura">
+                <div class="txtpic">
+                    <div>
+                        <h2>It all started with a Cherry Blossom</h2>
+                        <p>
+                            The original idea came from the noble deed of donation of 200 cherry blossom (Sakura) trees by Mr. Seiichi Takaki, President of Andersen Institute of Bread & Life, the holding company of Andersen Group of Hiroshima City, and the employees of the company. 
+                        </p>
+                        <p>
+                            The donated trees were planted in Langelinie Park. Mr. Takaki is Honorary Consul of Denmark and he was appointed to the honorable position of ambassador of H.C. Andersen on the occasion of the 200th anniversary of H.C. Andersen's birthday in 2005. The donated Sakura trees were planted in Langelinie Park.
+                        </p>
+                    </div>
+                    <img src="public/elba-esther-gordillo.jpeg">
+                </div>
+                <div class="txtpic">
+                    <img src="public/elba-esther-gordillo.jpg" alt="" srcset="">
+                    <div>
+                        <h2>
+                            The magic of Sakura Trees
+                        </h2>
+                        <p>
+                            In Japan people love and admire Sakura blossom and almost everybody go out to enjoy its beauty together with families, friends, lovers, office-mates and so forth wherever and whenever Sakura bloom. Once a year Sakura connects people and people meet people under Sakura trees. It is also the utmost and fundamental goal of the Committee.
+                        </p>
+                    </div>
+                </div>
+                <p class="story">
+                    The Committee of the Copenhagen Sakura Festival was established in February, 2008 to arrange the cultural event Copenhagen Sakura Festival with the help of the Japanese Embassy in Denmark, the Municipality of Copenhagen and other Japan-related cultural and private organizations.
+                </p>
+                <p class="story">
+                    The Committee has an honor to have Honorable Chairpersons H.E. the Ambassador of Japan to Denmark and Lord Mayor of the City of Copenhagen. The Committee consists of representatives of Japan related business, cultural and private organizations, the Municipality of Copenhagen and the Japanese Embassy.
+                </p>
+            </section>
+            <div id="separator">
+                <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+            </div>
+            <section id="sponsors">
+                <h2>Meet our sponsors</h2>
+                <div id="sponsorsmosaic">
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpeg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                    <a href="#" class="sponsortile">
+                        <img src="public/elba-esther-gordillo.jpg" alt="" width="100%">
+                    </a>
+                </div>
+            </section>
+            <section>
+                <Textbutton href="#">
+                    <h2 slot="label">
+                        Media archive
+                    </h2>
+                    <svg slot="icon" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6572 0.589897C10.3972 0.716135 10.2351 0.956179 10.2351 1.21726V5.28271H1.31588C0.865515 5.28271 0.5 5.60404 0.5 5.99997C0.5 6.3959 0.865515 6.71724 1.31588 6.71724H10.2351V10.7827C10.2351 11.0447 10.3972 11.2848 10.6572 11.4101C10.9172 11.5372 11.2348 11.5286 11.4861 11.39L20.1193 6.60726C20.3564 6.47528 20.5 6.24671 20.5 5.99997C20.5 5.75324 20.3564 5.52467 20.1193 5.39269L11.4861 0.60998C11.3534 0.537298 11.2022 0.5 11.051 0.5C10.9161 0.5 10.7801 0.530603 10.6572 0.589897Z" fill="#535252"/>
+                        </svg>
+                </Textbutton>
+                <Textbutton href="#">
+                    <h2 slot="label">
+                        News archive
+                    </h2>
+                    <svg slot="icon" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6572 0.589897C10.3972 0.716135 10.2351 0.956179 10.2351 1.21726V5.28271H1.31588C0.865515 5.28271 0.5 5.60404 0.5 5.99997C0.5 6.3959 0.865515 6.71724 1.31588 6.71724H10.2351V10.7827C10.2351 11.0447 10.3972 11.2848 10.6572 11.4101C10.9172 11.5372 11.2348 11.5286 11.4861 11.39L20.1193 6.60726C20.3564 6.47528 20.5 6.24671 20.5 5.99997C20.5 5.75324 20.3564 5.52467 20.1193 5.39269L11.4861 0.60998C11.3534 0.537298 11.2022 0.5 11.051 0.5C10.9161 0.5 10.7801 0.530603 10.6572 0.589897Z" fill="#535252"/>
+                        </svg>
+                </Textbutton>
+            </section>
+            <section id="rules">
+                <div id="rulesframe">
+                    <h2>Festival Rules</h2>
+                    <ol type="I">
+                        <li>
+                            The name of the committee is the Copenhagen Sakura Festival Committee (hereinafter referred to as the Committee). Sakura means cherry trees in Japanese.
+                        </li>
+                        <li>
+                            The domicile of the Committee is Copenhagen.
+                        </li>
+                        <li>
+                            The objective of the Committee is to organize the Sakura Festival (hereinafter referred to as the Festival) in connection with the blossoming of the 200 cherry trees at Langelinie, Copenhagen. The Committee shall organize festivals and arrange events including the setting-up of booths and a stage in the Langelinie area and/or other suitable places in Copenhagen and shall invite participants and sponsors to the Festival.
+                        </li>
+                        <li>
+                            The Honorary Chairpersons are H.E. the Ambassador of Japan to Denmark.
+                        </li>
+                        <li>The Honorary members of the Copenhagen Sakura Festival Committee are:
+                            <ul>
+                                <li>
+                                    Mayor of Culture and Leisure
+                                </li>
+                                <li>
+                                    Mayor of Techniques and Environment
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            The members of the Copenhagen Sakura Festival Committee are:
+                            <ul>
+                                <li>Representative of the Department of Techniques & Environment, Municipality of Copenhagen</li>
+                                <li>Representative of Andersen Denmark A/S</li>
+                                <li>Director of Tokai University European Center</li>
+                                <li>Head of Seidokan</li>
+                                <li>Representative of Nihonjinkai</li>
+                                <li>Representative of Japanese Restaurant Kyoto</li>
+                                <li>Minister Counsellor, Embassy of Japan</li>
+                                <li>Cultural Attaché, Embassy of Japan</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Membership of the Committee is voluntary and runs indefinitely. The Committee is responsible for the Committee's legal obligations. The members of the Committee do not hold personal liability for the Committee's obligation.
+                        </li>
+                        <li>
+                            The decision to increase or decrease the number of the Committee members should be agreed by a majority of two thirds of the Committee members. Should a member of the Committee wish to resign, he/she should recommend a successor who must be approved by a majority of two thirds of the remaining members of the Committee.
+                        </li>
+                        <li>
+                            The Committee shall set up a subcommittee among its members in order to conduct activities including finance, allocating funds, donations and book-keeping. The subcommittee shall consist of not more than 6 members and shall be elected from amongst the Committee members. The subcommittee shall elect a chairperson, a vice-chairperson, a PR director, a program director, a treasurer and secretariat from amongst its members. The subcommittee shall decide its work procedure.
+                        </li>
+                        <li>
+                            Two joint signatures of the subcommittee members have the binding power of the Committee.
+                        </li>
+                        <li>
+                            The expenses incurred in connection with the Committee will be covered through donations from Government institutions and private firms.
+                        </li>
+                        <li>
+                            The financial year of the Committee shall be from the 1st of July until the end of June. The first financial year however will start from the date of the adoption of the Rules of the Committee until the end of June 2008.
+                        </li>
+                        <li>
+                            The Committee shall meet at least twice a year, once before and once after the Festival.
+                        </li>
+                        <li>
+                            The Committee shall approve and adopt an official report including the statement of accounts of the Festival submitted by the subcommittee after the completion of all the activities concerned. Thereafter the Committee shall make public the adopted report not later than the end of the financial year concerned.
+                        </li>
+                        <li>
+                            Should a surplus of accounts in a financial year occur, it should be carried forward to the next financial year.
+                        </li>
+                        <li>
+                            If the Committee will be terminated, the surplus should be used for charity or the like.
+                        </li>
+                        <li>
+                            Adoptions of amendments to the Rules of the Committee and dissolution of the Committee require a majority of two-thirds of the votes at the Committee meeting.
+                        </li>
+                        <li>
+                            These Rules of the Copenhagen Sakura Festival Committee were adopted by the Committee on February 6, 2008.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <Thatsall />
+        </main>
+        <footer><Footercomp/></footer>
+        <script>
+            document.querySelector('#top').scrollIntoView({
+                behavior: 'smooth'
+            });
+        </script>
+    </body>
+</html>

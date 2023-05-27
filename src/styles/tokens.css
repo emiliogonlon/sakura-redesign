@@ -277,7 +277,7 @@
   --parspacing-broad: 1.2em;
   --radius-mini: 2px;
   --help: #a0a0a0;
-  --lineheight-readable: 120%;
+  --lineheight-readable: 1.25em;
   --floating-shadow-x: 2;
   --floating-shadow-y: 2;
   --floating-shadow-blur: 20;
@@ -363,8 +363,4 @@
   --token-set-order-0: global;
   --token-set-order-1: semantik;
   --token-set-order-2: elementer;
-}
-
-h1 {
-  color: var(--good);
 }
