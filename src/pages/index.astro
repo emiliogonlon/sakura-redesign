@@ -3,7 +3,7 @@ import Header from "../components/Header.astro"
 import Herosection from "../components/Herosection.astro"
 import Footercomp from "../components/Footercomptree.astro"
 import Infomap from "../components/Infomap.astro";
-import Latestnews from "../components/Latestnews.astro";
+import Compacttile from "../components/Compacttile.astro";
 import Listkomponent from "../components/Listkomponent.astro";
 import Newsletter from "../components/Newsletter.astro";
 ---
@@ -44,8 +44,10 @@ import Newsletter from "../components/Newsletter.astro";
 			<section>
 				<h2>
 					Latest News
-					<Latestnews />
 				</h2>
+				<Compacttile title="Ambassador Trago Koroto congratulates Aikido team" link="#" btnlabel="read the story" imgsrc="public/elba-esther-1535088001.jpeg">
+					<span slot="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum amet illum eligendi tenetur commodi libero. Iste suscipit minima libero veniam qui. Reprehenderit odio necessitatibus animi fugiat, impedit suscipit! Laudantium, modi?</span>
+				</Compacttile>
 			</section>
 			<section id="newslettersection">
 				<div>
