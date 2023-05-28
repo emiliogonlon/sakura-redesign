@@ -18,10 +18,12 @@
 
 #entrancesection div{
     align-self: center;
+    z-index: 2;
 }
 
 #origamihund {
     position: absolute;
     left: 0;
     align-self: flex-end;
+    z-index: 1;
 }
