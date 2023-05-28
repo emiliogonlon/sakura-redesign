@@ -79,7 +79,7 @@ input {
     border: none;
     border-radius: var(--br-textfield);
     background: var(--bg-textfield);
-    height: 2.3em;
+    height: 2em;
     padding: 0.75px 0.75em;
     font-family: var(--body-text-desktop-font-family);
     font-size: var(--body-text-desktop-font-size);
@@ -98,6 +98,7 @@ input:invalid {
 }
 
 label {
+    display: block;
     color: var(--help);
     font-size: var(--helptext-desk-font-size);
     font-weight: var(--helptext-desk-font-weight);
@@ -141,20 +142,17 @@ iframe {
 /* Integration */
 .primaer_knap {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px;
+    padding: 0.3em 1em;
     gap: 15px;
-  
-    width: 157px;
-    height: 43px;
-    left: calc(50% - 157px / 2 + 188.5px);
-    top: 2697px;
-  
+    font-size: var(--primbutton-font-desk-font-size);
+    font-weight: var(--primbutton-font-desk-font-weight); 
     background: linear-gradient(266.1deg, #109ad6 -6.5%, #26c7eb 108.13%);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    border-radius: var(--br-thumbnail);
+    border: none;
+    margin: 0.5rem 0;
   }
   
   .almindelig_knap {
