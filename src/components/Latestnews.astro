@@ -1,21 +1,62 @@
 ---
+import Textbutton from "../components/Textbutton.astro"
+const Title = Astro.props.title
+const link = Astro.props.btnlink
+const btnlabel = Astro.props.btnlabel
+const imgsrc = Astro.props.imgsrc
+const imgalt = Astro.props.imgalt
 ---
 
-<div>
-  <img src="map.svg" alt="" />
-  <h3>Gajasidh</h3>
-  <p>kjhasdjlavbajsdbas</p>
-  <a href="">READ THE STORY <img src="arrow_right.svg" alt="pil" /></a>
+<div class="compacttile">
+  <div class="ctilepic">
+    <img src={imgsrc} alt={imgalt} width="100%"/>
+  </div>
+  <div class="tileinfo">
+    <h3>{Title}</h3>
+    <div class="ctiletext">
+      <slot name="text" />
+    </div>
+    <Textbutton link={link}>
+      <span slot="label">{btnlabel}</span>
+      <svg slot="icon" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6572 0.589897C10.3972 0.716135 10.2351 0.956179 10.2351 1.21726V5.28271H1.31588C0.865515 5.28271 0.5 5.60404 0.5 5.99997C0.5 6.3959 0.865515 6.71724 1.31588 6.71724H10.2351V10.7827C10.2351 11.0447 10.3972 11.2848 10.6572 11.4101C10.9172 11.5372 11.2348 11.5286 11.4861 11.39L20.1193 6.60726C20.3564 6.47528 20.5 6.24671 20.5 5.99997C20.5 5.75324 20.3564 5.52467 20.1193 5.39269L11.4861 0.60998C11.3534 0.537298 11.2022 0.5 11.051 0.5C10.9161 0.5 10.7801 0.530603 10.6572 0.589897Z" fill="#535252"/>
+        </svg>
+    </Textbutton>
+  </div>
 </div>
 
 <style>
-  img {
-    width: 30%;
-    display: block;
-    align-items: center;
+  .compacttile {
+    width: 17rem;
+    border-radius: var(--br-thumbnail);
+    display: grid;
+    grid: 40% 60% / 1;
   }
-  div {
-    margin: 20px;
-    padding: 10x;
+
+  .ctilepic {
+    display: flex;
+    border-radius: var(--br-thumbnail);
+    overflow: hidden;
   }
+
+  .tileinfo {
+    margin: 1rem;
+  }
+
+  h3 {
+    font-size: var(--tile-title-desktop-font-size);
+    line-height: var(--tile-title-desktop-line-height);
+    margin: 0 0 1rem;
+  }
+
+  .ctiletext {
+    height: 10rem;
+    overflow: scroll;
+    color: var(--lighttext);
+    font-size: body;
+    font-weight: var(--body-text-desktop-font-weight);
+    line-height: var(--body-text-desktop-line-height);
+
+  }
+
 </style>
