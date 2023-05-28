@@ -6,7 +6,22 @@
     margin-top: var(--spacing-max);
     margin-bottom: 3em;
 }
-#entrancesection {
+
+#entrancesection{
     display: flex;
-    height: 500px;
+    justify-content: center;
+    height: 30rem;
+    text-align: left;
+    margin-bottom: -15px;
+    margin-top: 0;
+}
+
+#entrancesection div{
+    align-self: center;
+}
+
+#origamihund {
+    position: absolute;
+    left: 0;
+    align-self: flex-end;
 }
