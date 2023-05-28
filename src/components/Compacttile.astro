@@ -29,7 +29,7 @@ const imgalt = Astro.props.imgalt
 <style>
   .compacttile {
     text-align: left;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 17rem;
     border-radius: var(--br-thumbnail);
     display: grid;
@@ -42,14 +42,10 @@ const imgalt = Astro.props.imgalt
     overflow: hidden;
   }
 
-  .tileinfo {
-    margin: 1rem;
-  }
-
   h3 {
     font-size: var(--tile-title-desktop-font-size);
     line-height: var(--tile-title-desktop-line-height);
-    margin: 0 0 1rem;
+    margin: 1rem 0;
   }
 
   .ctiletext {

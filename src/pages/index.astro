@@ -6,6 +6,7 @@ import Infomap from "../components/Infomap.astro";
 import Compacttile from "../components/Compacttile.astro";
 import Listkomponent from "../components/Listkomponent.astro";
 import Newsletter from "../components/Newsletter.astro";
+import Textbutton from "../components/Textbutton.astro"
 ---
 
 <html lang="en">
@@ -45,6 +46,14 @@ import Newsletter from "../components/Newsletter.astro";
 				<h2>
 					Latest News
 				</h2>
+				<div style="margin: auto;">
+					<Textbutton href="newsarchive.html" target="_self">
+						<span slot="label">See all</span>
+						<svg slot="icon" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.6572 0.589897C10.3972 0.716135 10.2351 0.956179 10.2351 1.21726V5.28271H1.31588C0.865515 5.28271 0.5 5.60404 0.5 5.99997C0.5 6.3959 0.865515 6.71724 1.31588 6.71724H10.2351V10.7827C10.2351 11.0447 10.3972 11.2848 10.6572 11.4101C10.9172 11.5372 11.2348 11.5286 11.4861 11.39L20.1193 6.60726C20.3564 6.47528 20.5 6.24671 20.5 5.99997C20.5 5.75324 20.3564 5.52467 20.1193 5.39269L11.4861 0.60998C11.3534 0.537298 11.2022 0.5 11.051 0.5C10.9161 0.5 10.7801 0.530603 10.6572 0.589897Z" fill="#535252"/>
+							</svg>
+					</Textbutton>
+				</div>
 				<div class="compacttilegallery">
 					<Compacttile title="Ambassador Trago Koroto congratulates Aikido team" link="#" btnlabel="read the story" imgsrc="public/elba-esther-1535088001.jpeg">
 						<span slot="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum amet illum eligendi tenetur commodi libero. Iste suscipit minima libero veniam qui. Reprehenderit odio necessitatibus animi fugiat, impedit suscipit! Laudantium, modi?</span>
@@ -57,54 +66,36 @@ import Newsletter from "../components/Newsletter.astro";
 					</Compacttile>
 				</div>
 			</section>
-			<section id="newslettersection">
-				<div>
-					<div>
-						<h2>Don't miss out on anything!</h2>
-						<p>
-							Receive the upcoming fascinating events, guests and activities.
-						</p>
-						<p>
-							Sign up for our newsletter and get the most relevant updates about the festival right on your inbox.
-						</p>
-						<p class="fineprint">
-							You can unsubscribe at any moment.
-							By signing up, you confirm you have read and agree with our Terms of Use and Privacy Policy.
-						</p>
-					</div>
-					<button>Sign up</button>
-				</div>
-			</section>
 			<Newsletter />
-    <section id="entrancesection">
-      <img src="origami_hund.svg" id="hund" alt="hund_origami" />
-      <div id="text">
-        <h2>Entrance is free</h2>
-        <p>
-          As always, the entrance to the festival is <a href="">free</a> for everyone
-        </p>
-        <p>
-          We are excited to welcome people from all over Denmark and the
-          Copenhagen area to experience some of the best Japan has to offer.
-        </p>
-      </div>
-      <a href="programme">Programme</a>
-      <a href=""
-        >LEARN MORE ABOUT THE FESTIVAL <img
-          src="arrow_right.svg"
-          alt="pil"
-        /></a
-      >
-      <img src="sakura_pink.svg" id="sakura_pink" alt="sakura_træ" />
-    </section>
-    <Listkomponent />
+			<section id="entrancesection">
+			<img src="origami_hund.svg" id="hund" alt="hund_origami" />
+			<div id="text">
+				<h2>Entrance is free</h2>
+				<p>
+				As always, the entrance to the festival is <a href="">free</a> for everyone
+				</p>
+				<p>
+				We are excited to welcome people from all over Denmark and the
+				Copenhagen area to experience some of the best Japan has to offer.
+				</p>
+			</div>
+			<a href="programme">Programme</a>
+			<a href=""
+				>LEARN MORE ABOUT THE FESTIVAL <img
+				src="arrow_right.svg"
+				alt="pil"
+				/></a
+			>
+			<img src="sakura_pink.svg" id="sakura_pink" alt="sakura_træ" />
+			</section>
+			<Listkomponent />
 		</main>
 		<footer>
 			<Footercomp />
 		</footer>
 	</body>
 	<script>
-        document.getElementById('index.html').style.backgroundColor = "var(--nav-bg-current)";
-        document.getElementById('index.html').firstChild.style.color = "var(--nav-currentwhite)"
-    </script>
+		document.getElementById('index.html').style.backgroundColor = "var(--nav-bg-current)";
+		document.getElementById('index.html').firstChild.style.color = "var(--nav-currentwhite)"
+	</script>
 </html>

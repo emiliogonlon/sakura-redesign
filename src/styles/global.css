@@ -130,6 +130,7 @@ iframe {
 }
 
 .compacttilegallery {
+    margin: var(--spacing-max) auto;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
