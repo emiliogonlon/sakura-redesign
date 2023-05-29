@@ -3,6 +3,7 @@ import Listkomponent from "../components/Listkomponent.astro";
 import Header from "../components/Header.astro"
 import Footer from "../components/Footercomp.astro"
 import Footercomp from "../components/Footercomp.astro";
+import Textbutton from "../components/Textbutton.astro";
 ---
 
 <html lang="en">
@@ -22,7 +23,10 @@ import Footercomp from "../components/Footercomp.astro";
     </header>
     <main>
       <h1>2024 Programme</h1>
-      <button>SORT BY <img src="list_arrows.svg" alt="" /></button>
+      <Textbutton href="#">
+        <span slot="Sort by"></span>
+        
+      </Textbutton>
       <section>
         <h2>Saturday 18 March</h2>
         <ul class="richlist">
@@ -41,7 +45,7 @@ import Footercomp from "../components/Footercomp.astro";
       </section>
       <section>
         <h2>Sunday 19 March</h2>
-        <ul>
+        <ul class="richlist">
           <Listkomponent />
           <Listkomponent />
           <Listkomponent />
@@ -64,14 +68,8 @@ import Footercomp from "../components/Footercomp.astro";
       <Footercomp />
     </footer>
   </body>
+	<script>
+		document.getElementById('programme.html').style.backgroundColor = "var(--nav-bg-current)";
+		document.getElementById('programme.html').firstChild.style.color = "var(--nav-currentwhite)"
+	</script>
 </html>
-
-<style>
-  h1 {
-    text-align: center;
-  }
-
-  #back_to_top {
-    text-align: center;
-  }
-</style>
