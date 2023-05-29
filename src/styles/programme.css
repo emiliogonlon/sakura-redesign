@@ -1,0 +1,16 @@
+.richlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+    gap: var(--spacing-max);
+}
+
+.helptext {
+    font-size: var(--helptext-desk-font-size);
+    font-weight: var(--helptext-desk-font-weight);
+    color: var(--help);
+    letter-spacing: var(--helptext-desk-letter-spacing);
+    text-transform: var(--helptext-desk-text-case);
+}

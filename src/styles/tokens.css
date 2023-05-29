@@ -139,7 +139,7 @@
   --helptext-desk-font-family: "articulat-cf", Arial, sans-serif;
   --helptext-desk-font-weight: 600;
   --helptext-desk-font-size: 0.89rem;
-  --helptext-desk-letter-spacing: ;
+  --helptext-desk-letter-spacing: 0.05em;
   --helptext-desk-text-decoration: none;
   --helptext-desk-text-case: uppercase;
   --helptext-mobile-font-family: "articulat-cf", Arial, sans-serif;
@@ -212,9 +212,9 @@
   --list-desk-symbol-text-decoration: none;
   --footerline: 1pt;
   --br-list-title: 2px;
-  --rich-list-item-shadow-x: 2;
-  --rich-list-item-shadow-y: 2;
-  --rich-list-item-shadow-blur: 20;
+  --rich-list-item-shadow-x: 2px;
+  --rich-list-item-shadow-y: 2px;
+  --rich-list-item-shadow-blur: 20px;
   --rich-list-item-shadow-spread: 0;
   --rich-list-item-shadow-color: #00000040;
   --rich-list-item-shadow-type: dropShadow;

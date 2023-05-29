@@ -1,17 +1,18 @@
 ---
 ---
 
-<li>
-  <div id="kasse">
+<li class="richlistitem">
+  <div class="richlistimgcont">
     <img src="map.svg" alt="kort" />
-    <div>
-      <h2>Opening Ceremony</h2>
-      <p>CSFC</p>
-      <h3>10.45 - 11-00 · Main stage</h3>
+  </div>
+    <div class="richlistdata">
+      <h3 class="tiletitle">Opening Ceremony</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laboriosam, necessitatibus sunt nihil facere numquam autem accusamus, id voluptatum aut aspernatur nulla totam est sint inventore assumenda error omnis itaque?</p>
+      <span class="helptext">10.45 - 11-00 · Main stage</span>
     </div>
     <div>
       <p>ACCES IS FREE TO ALL EVENTS</p>
-      <button class="primær_knap"
+      <button class="primaer_knap"
         >Add to your calendar<img
           src="kalender.svg"
           alt="kalender_knap"
@@ -24,17 +25,25 @@
         ><img src="stjerne.svg" alt="favorit_knap" /></button
       >
     </div>
-  </div>
 </li>
 
 <style>
-  #kasse {
+  .richlistitem {
     display: flex;
-    background-color: var(--bg-screens);
-    box-shadow: var(--rich-list-item-shadow-type);
-    border-radius: 2%;
+    background-color: var(--bg-rich-list-item);
+    box-shadow: var(--rich-list-item-shadow-x) var(--rich-list-item-shadow-y) var(--rich-list-item-shadow-blur) var(--rich-list-item-shadow-spread) var(--rich-list-item-shadow-color);
+    border-radius: var(--br-image);
+    text-align: left;
+    padding: 5px;
+    height: 12.5rem;
+    align-items: center;
+    gap: var(--spacing-normal);
+  }
+  .richlistimgcont{
+    display: flex;
+    object-fit: cover;
   }
   img {
-    width: 30%;
+    width: 100%;
   }
 </style>
