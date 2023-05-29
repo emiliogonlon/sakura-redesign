@@ -1,8 +1,9 @@
 ---
 const link = Astro.props.href
+const target = Astro.props.target
 ---
 
-<a class="textbutton" href={link}>
+<a class="textbutton" href={link} target={target}>
     <span>
         <slot name="label" />
     </span>
@@ -12,12 +13,15 @@ const link = Astro.props.href
 </a>
 
 <style>
+    *{
+        text-transform: uppercase;
+        font-weight: var(--textbutton-desk-font-weight);
+    }
     .textbutton{
         display: flex;
         align-items: center;
         gap: var(--spacing-normal);
         width: fit-content;
-        margin: auto;
         color: var(--lighttext);
     }
     h2, p {
@@ -28,10 +32,13 @@ const link = Astro.props.href
         font-weight: var(--textbutton-desk-font-weight);
         font-size: var(--textbutton-desk-font-size);
         letter-spacing: var(--textbutton-desk-letter-spacing);
-        text-transform: capitalize;
     }
 
     .islink{
         text-decoration: var(--textbutton-link);
+    }
+
+    a{
+        margin:inherit;
     }
 </style>
