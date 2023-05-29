@@ -1,5 +1,5 @@
 ---
-import Newsletter from "../components/Newsletter.astro"
+import Listkomponent from "../components/Listkomponent.astro"
 ---
 
 <html lang="en">
@@ -13,7 +13,10 @@ import Newsletter from "../components/Newsletter.astro"
 		<title>Astro</title>
 	</head>
 	<body>
-		<img src="public/elba-esther-1535088001.jpeg" height="400px" alt="">
-        <Newsletter />
+		<ul class="richlist">
+			<Listkomponent time="8.30-9.30" location="Toilet" locationlink=2" />
+			<Listkomponent />
+			<Listkomponent />
+		</ul>
 	</body>
 </html>
