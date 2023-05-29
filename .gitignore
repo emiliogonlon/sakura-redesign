@@ -24,3 +24,5 @@ pnpm-debug.log*
 public/elba-esther-gordillo.jpeg
 public/elba-esther-gordillo.jpg
 src/pages/tests.astro
+
+tests.astro
