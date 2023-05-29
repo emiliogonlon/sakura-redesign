@@ -1,0 +1,64 @@
+---
+import Textbutton from "../components/Textbutton.astro"
+---
+
+<div class="mapframe">
+  <div class="tekst">
+    <h2>Join Us at Lagelinje Park</h2>
+    <p>
+      Located right in the heart of Copenhagen, Langelinje Park hosts the Sakura
+      Festival every year.
+    </p>
+    <p>
+      Get lost in the magic of the blossoming Sakura trees and enjoy a wonderful
+      weekend with your friends and familiy.
+    </p>
+    <Textbutton href="https://www.openstreetmap.org/#map=19/55.69061/12.59970" target="_blank">
+      <span slot="label">Get directions</span>
+      <svg slot="icon" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6572 0.589897C10.3972 0.716135 10.2351 0.956179 10.2351 1.21726V5.28271H1.31588C0.865515 5.28271 0.5 5.60404 0.5 5.99997C0.5 6.3959 0.865515 6.71724 1.31588 6.71724H10.2351V10.7827C10.2351 11.0447 10.3972 11.2848 10.6572 11.4101C10.9172 11.5372 11.2348 11.5286 11.4861 11.39L20.1193 6.60726C20.3564 6.47528 20.5 6.24671 20.5 5.99997C20.5 5.75324 20.3564 5.52467 20.1193 5.39269L11.4861 0.60998C11.3534 0.537298 11.2022 0.5 11.051 0.5C10.9161 0.5 10.7801 0.530603 10.6572 0.589897Z" fill="#535252"/>
+        </svg>
+    </Textbutton>
+  </div>
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.597120702266695%2C55.68989309584712%2C12.602270543575289%2C55.69132180152581&amp;layer=mapnik" />
+</div>
+
+<style>
+  .mapframe {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-screens);
+    border-radius: var(--br-image);
+    padding: 2rem;
+    align-content: center;
+    gap: 8rem;
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  .tekst {
+    text-align: left;
+    justify-content: start;
+    margin: 3rem 0;
+  }
+
+  iframe {
+    min-width: 35%;
+  }
+
+  @media screen (max-width: 1200px) {
+    .mapframe {
+      display: flex;
+      flex-flow: column;
+      background-color: var(--bg-screens);
+      border-radius: 2%;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .tekst {
+      display: flex;
+      margin: 20px;
+    }
+  }
+</style>

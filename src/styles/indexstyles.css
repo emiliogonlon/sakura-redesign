@@ -1,0 +1,29 @@
+.notice {
+    color: var(--notice-blue);
+    margin: auto;
+    font-size: var(--size-third-desktop);
+    letter-spacing: var(--kerning-broad);
+    margin-top: var(--spacing-max);
+    margin-bottom: 3em;
+}
+
+#entrancesection{
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    text-align: left;
+    margin-bottom: -15px;
+    margin-top: 0;
+}
+
+#entrancesection div{
+    align-self: center;
+    z-index: 2;
+}
+
+#origamihund {
+    position: absolute;
+    left: 0;
+    align-self: flex-end;
+    z-index: 1;
+}
