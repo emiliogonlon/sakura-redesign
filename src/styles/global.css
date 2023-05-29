@@ -203,3 +203,11 @@ iframe {
 .details a:hover{
     text-decoration: underline;
 }
+
+.richlistgroup{
+    margin:0 auto 5rem;
+}
+
+.richlisttitle {
+    margin-top: 0;
+}
