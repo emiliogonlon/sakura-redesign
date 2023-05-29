@@ -160,6 +160,7 @@ iframe {
     margin: 0.5rem 0;
     width: max-content;
     cursor: pointer;
+    color: var(--primbutton-text);
   }
   
   .almindelig_knap {
