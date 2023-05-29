@@ -1,0 +1,19 @@
+---
+const contacticon = Astro.props.contacticon
+const contacttxtn = Astro.props.contacttxt
+---
+<div id="contactinfo">
+    <div id="iconimage"> <slot name="contacticon"></slot>
+</div> 
+<div id="contacttext">
+<slot name="contacttxt"></slot>
+</div>
+<style>
+    #contactinfo{
+        display: flex;
+    }
+    #iconimage{
+        background-color: var(--primbutton-text);
+        border-radius: var(--br-thumbnail); 
+    }
+</style>

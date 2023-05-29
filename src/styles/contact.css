@@ -1,0 +1,12 @@
+.contactformular {
+  display: flex;
+  margin: auto auto 25rem;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.contactcheckbox {
+  display: grid;
+  gap: 7px;
+}
+
