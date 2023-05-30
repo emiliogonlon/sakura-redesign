@@ -4,6 +4,9 @@
  */
 
 :root {
+  --hoverskala: 105%;
+  --activeskala: 95%;
+  --standard-transition: 0.3s;
   --h1-desktop-font-family: "articulat-cf", Arial, sans-serif;
   --h1-desktop-font-weight: 900;
   --h1-desktop-font-size: 2.81rem;

@@ -1,7 +1,3 @@
-.textbutton{
-    margin-left: 5rem;
-}
-
 .richlistitem {
     display: flex;
     background-color: var(--bg-rich-list-item);
