@@ -170,7 +170,7 @@
         <p>
           Sign up for our newsletter and get the most relevant updates about the festival right on your inbox
         </p>
-        <p class="nlfineprint">
+        <p id="nldeskfineprint">
           You can <a href="#">unsubcribe</a> at any moment.<br/>
           By signing up, you confirm you have read and agree with our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
         </p>
@@ -180,6 +180,10 @@
         <input name="newsletter email" id="newsletter-email" type="email" pattern="email" placeholder="someone@somewhere.dk"/>
         <button class="primaer_knap">Sign up</button>
       </div>
+      <p id="nlmobilefineprint">
+        You can <a href="#">unsubcribe</a> at any moment.<br/>
+        By signing up, you confirm you have read and agree with our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
+      </p>
     </div>
 </div>
 </section>
@@ -221,6 +225,7 @@
   #cloudsmallcont{
     left: 30%;
   }
+
   #nlsection {
     display: flex;
     width: 100%;
@@ -242,6 +247,7 @@
     font-size: var(--body-text-desktop-font-size);
     text-align: left;
   }
+
   #nltitle {
     font-weight: var(--herobutton-font-desk-font-weight);
     font-size: var(--herobutton-font-desk-font-size);
@@ -249,12 +255,16 @@
     letter-spacing: var(--herobutton-font-desk-letter-spacing);
   }
 
-  .nlfineprint {
+  #nldeskfineprint {
     font-size: var(--fine-print-desktop-font-size);
     font-weight: var(--fine-print-desktop-font-weight);
     letter-spacing: var(--fine-print-desktop-letter-spacing);
     margin: var(--fine-print-desktop-paragraph-spacing);
     line-height: 1em;
+  }
+
+  #nlmobilefineprint{
+    display: none;
   }
 
   #nlinput{
@@ -271,6 +281,57 @@
 
   .primaer_knap{
     cursor:pointer;
+  }
+
+  @media screen and (max-width: 1024px){
+    #nlcontent {
+    font-size: var(--body-text-mobile-font-size);
+  }
+
+  #nltitle {
+    font-weight: var(--herobutton-font-mobile-font-weight);
+    letter-spacing: var(--herobutton-font-mobile-letter-spacing);
+  }
+
+    #nlcontent {
+      grid-template: auto auto / auto;
+      margin: 5rem;
+    }
+
+    input {
+      width: initial;
+    }
+
+    #nldeskfineprint{
+      display: none;
+    }
+
+    #nlmobilefineprint{
+      display: inline;
+      font-size: var(--fine-print-mobile-font-size);
+      font-weight: var(--fine-print-mobile-font-weight);
+      letter-spacing: var(--fine-print-mobile-letter-spacing);
+      margin: var(--fine-print-mobile-paragraph-spacing);
+      line-height: 1em;
+    }
+
+    #treerightcont{
+      display: none;
+    }
+
+    #treeleftcont{
+      opacity: 60%;
+    }
+
+    #cloudbigcont{
+      right: 1rem;
+      top: -3rem;
+    }
+    
+    #cloudsmallcont{
+      left: 3rem;
+      top: -3rem;
+    }
   }
 
 </style>
