@@ -1,3 +1,41 @@
 .textbutton{
     margin-left: 5rem;
 }
+
+.richlistitem {
+    display: flex;
+    background-color: var(--bg-rich-list-item);
+    box-shadow: var(--rich-list-item-shadow-x) var(--rich-list-item-shadow-y) var(--rich-list-item-shadow-blur) var(--rich-list-item-shadow-spread) var(--rich-list-item-shadow-color);
+    border-radius: var(--br-image);
+    text-align: left;
+    padding: var(--spacing-min);
+    height: 12.5rem;
+    align-items: center;
+    gap: var(--spacing-normal);
+  }
+  .richlistimgcont{
+    display: flex;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    border-radius: var(--br-thumbnail);
+    flex-shrink: 0;
+  }
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .richlistdata {
+    margin-top: auto;
+    flex-grow: 1;
+  }
+  .sharefav{
+    display: flex; 
+    gap:var(--spacing-normal);
+  }
+
+  #interactions{
+    align-self: flex-end;
+  }
