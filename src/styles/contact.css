@@ -1,4 +1,4 @@
-.contactformular {
+#contactinfo {
   display: flex;
   margin: auto auto 25rem;
   justify-content: center;
@@ -10,3 +10,7 @@
   gap: 7px;
 }
 
+#contactshortcuts{
+  list-style: none;
+  padding: 0;
+}

@@ -1,19 +1,40 @@
 ---
-const contacticon = Astro.props.contacticon
-const contacttxtn = Astro.props.contacttxt
+const contacttxtn = Astro.props.display
+const link = Astro.props.href
+const target = Astro.props.target
 ---
-<div id="contactinfo">
-    <div id="iconimage"> <slot name="contacticon"></slot>
-</div> 
-<div id="contacttext">
-<slot name="contacttxt"></slot>
-</div>
+<li>
+    <a href={link} target={target}>
+        <div class="contacttile">
+            <div class="ctileicon"> 
+                <slot name="icon" />
+            </div> 
+            <div class="contacttext">
+                {contacttxtn}
+            </div>
+        </div>
+    </a>
+</li>
 <style>
-    #contactinfo{
+    .contacttile{
         display: flex;
+        align-items: center;
+        gap: var(--spacing-min);
+        background-color: aqua;
+        margin-bottom: var(--spacing-normal);
     }
-    #iconimage{
+    .ctileicon{
+        display: flex;
+        place-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
         background-color: var(--primbutton-text);
         border-radius: var(--br-thumbnail); 
+    }
+    .contacttext{
+        color: var(--light-text);
+        font-size: var(--body-text-desktop-font-size);
+        font-weight: var(--body-text-desktop-font-weight);
     }
 </style>
