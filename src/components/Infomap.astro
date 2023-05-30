@@ -21,6 +21,7 @@ import Textbutton from "../components/Textbutton.astro"
     </Textbutton>
   </div>
   <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.597120702266695%2C55.68989309584712%2C12.602270543575289%2C55.69132180152581&amp;layer=mapnik" />
+  
 </div>
 
 <style>
@@ -46,19 +47,23 @@ import Textbutton from "../components/Textbutton.astro"
     min-width: 35%;
   }
 
-  @media screen (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .mapframe {
       display: flex;
-      flex-flow: column;
+      flex-direction: column-reverse;
       background-color: var(--bg-screens);
       border-radius: 2%;
       margin: 20px;
-      padding: 10px;
+      padding: 2rem;
+      gap: 0;
+    }
+
+    iframe{
+      height: 350px;
     }
 
     .tekst {
-      display: flex;
-      margin: 20px;
+      margin: 0 0;
     }
   }
 </style>
