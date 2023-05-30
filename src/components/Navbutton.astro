@@ -15,7 +15,7 @@ const path = Astro.props.path
         font-weight: var(--navbutton-desk-font-weight);
         font-size: var(----navbutton-desk-font-size);
         text-transform: var(--navbutton-desk-text-case);
-        transition: .2s;
+        transition: var(--standard-transition);
     }
 
     li:target {
@@ -34,12 +34,12 @@ const path = Astro.props.path
 
     li:hover {
         background-color: var(--nav-bg-hovered);
-        scale: 110%;
+        scale: var(--hoverskala);
     }
 
     li:active {
         background-color: var(--nav-bg-current);
         color: var(--white-text);
-        scale: 100%;
+        scale: var(--activeskala);
     }
 </style>
