@@ -364,4 +364,6 @@
   --token-set-order-0: global;
   --token-set-order-1: semantik;
   --token-set-order-2: elementer;
+  --mobile-spacing-min: 44px;
+  --mobile-spacing-max: 50px;
 }
