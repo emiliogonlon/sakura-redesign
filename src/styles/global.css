@@ -80,19 +80,28 @@ p {
     max-width: 750px;
 }
 
-input {
+input, textarea {
     border: none;
     border-radius: var(--br-textfield);
     background: var(--bg-textfield);
-    height: 2em;
     padding: 0.75px 0.75em;
     font-family: var(--body-text-desktop-font-family);
     font-size: var(--body-text-desktop-font-size);
     font-weight: var(--body-text-desktop-font-weight);
     transition: var(--standard-transition);
+    width: 100%;
 }
 
-input:focus {
+input{
+    height: 2em;
+}
+
+textarea{
+    resize:both;
+    transition: none;
+}
+
+input:focus, textarea:focus, input:focus:invalid {
     outline: none;
     box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--active-shadow-color);
 }
@@ -109,6 +118,7 @@ label {
     font-weight: var(--helptext-desk-font-weight);
     font-kerning: var(--helptext-desk-letter-spacing);
     text-transform: var(--helptext-desk-text-case);
+    text-align: left;
 }
 
 section {

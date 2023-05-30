@@ -20,8 +20,11 @@ const target = Astro.props.target
         display: flex;
         align-items: center;
         gap: var(--spacing-min);
-        background-color: aqua;
-        margin-bottom: var(--spacing-normal);
+        /* background-color: aqua; */
+        /* margin-bottom: var(--spacing-normal); */
+        border-radius: var(--br-thumbnail);
+        transition: var(--standard-transition);
+        padding-right: var(--spacing-min);
     }
     .ctileicon{
         display: flex;
@@ -36,5 +39,9 @@ const target = Astro.props.target
         color: var(--light-text);
         font-size: var(--body-text-desktop-font-size);
         font-weight: var(--body-text-desktop-font-weight);
+    }
+
+    .contacttile:hover{
+        background-color: var(--gray-hovering);
     }
 </style>

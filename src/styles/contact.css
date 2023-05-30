@@ -1,16 +1,27 @@
 #contactinfo {
   display: flex;
-  margin: auto auto 25rem;
-  justify-content: center;
-  gap: 7rem;
+  justify-content: space-evenly;
+  max-width: 70rem;
+  margin: 5rem auto 25rem;
+  /* border: 3px solid black; */
+  text-align: left;
 }
 
-.contactcheckbox {
+#infocol{
   display: grid;
-  gap: 7px;
+  gap: calc(var(--spacing-max)*2);
+  color: var(--lighttext);
 }
 
-#contactshortcuts{
+.contactshortcuts{
+  display: grid;
+  gap: var(--spacing-min);
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+#contform{
+  display: grid;
+  gap: var(--spacing-max);
 }
