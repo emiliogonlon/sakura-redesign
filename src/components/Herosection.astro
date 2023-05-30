@@ -19,7 +19,6 @@ import Navarrow from "../components/Navarrow.astro"
         rotate: 180deg;
         top: 50%;
         right: var(--spacing-normal);
-
     }
     #leftarrow {
         position: absolute;
@@ -34,5 +33,14 @@ import Navarrow from "../components/Navarrow.astro"
         min-height: 200px;
         border-radius: var(--br-image);
         overflow: clip;
+    }
+
+    @media screen and (max-width: 1024px){
+
+        #heroframe {
+            min-height: 50vh;
+            max-height: 300px;
+        } 
+
     }
 </style>
