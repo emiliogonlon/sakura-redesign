@@ -37,11 +37,18 @@
 #rulesframe {
     background-color: var(--bg-textfield);
     border-radius: var(--br-image);
-    max-height: 50vh;
-    overflow-y: scroll;
     padding: 3em 6em;
     line-height: var(--lineheight-readable);
     text-align: initial;
+}
+
+.rulesframeextent{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+#expanderareacont{
+    display: none;
 }
 
 #rulesframe li {
@@ -59,4 +66,27 @@
 
 .textbutton {
     margin: auto;
+}
+
+@media screen and (max-width: 1024px){
+    .story{
+        text-align: left;
+    }
+    #sponsorsmosaic{
+        justify-content: space-evenly;
+    }
+    #rulesframe{
+        padding: 3rem 3rem 0;
+    }
+    .ruleslist {
+        max-height: 7rem;
+        overflow: clip;
+    }
+    #expanderareacont{
+        display: unset;
+    }
+    .ruleslistexpand{
+        max-height: none;
+        overflow: visible;
+    }
 }

@@ -3,6 +3,7 @@ import Header from "../components/Header.astro"
 import Footercomp from "../components/Footercomp.astro"
 import Textbutton from "../components/Textbutton.astro"
 import Thatsall from "../components/Thatsall.astro"
+import Expander from "../components/Expander.astro"
 ---
 <html lang="en">
 	<head>
@@ -110,9 +111,9 @@ import Thatsall from "../components/Thatsall.astro"
                 </Textbutton>
             </section>
             <section id="rules">
-                <div id="rulesframe">
+                <div id="rulesframe" class="rulesframeextent">
                     <h2>Festival Rules</h2>
-                    <ol type="I">
+                    <ol id="ruleslist" class="ruleslist" type="I">
                         <li>
                             The name of the committee is the Copenhagen Sakura Festival Committee (hereinafter referred to as the Committee). Sakura means cherry trees in Japanese.
                         </li>
@@ -185,6 +186,9 @@ import Thatsall from "../components/Thatsall.astro"
                             These Rules of the Copenhagen Sakura Festival Committee were adopted by the Committee on February 6, 2008.
                         </li>
                     </ol>
+                    <div id="expanderareacont">
+                        <Expander />
+                    </div>
                 </div>
             </section>
             <Thatsall />
@@ -197,5 +201,20 @@ import Thatsall from "../components/Thatsall.astro"
         });
         document.getElementById('about.html').style.backgroundColor = "var(--nav-bg-current)";
         document.getElementById('about.html').firstChild.style.color = "var(--nav-currentwhite)";
+
+        const expander = document.getElementById("expanderarea");
+        const rulesList = document.getElementById("ruleslist");
+        const rulesFrame = document.getElementById("rulesframe");
+        const expanderArrow = document.getElementById("exparrow");
+
+        function expandRules() {
+            rulesList.classList.toggle("ruleslist");
+            rulesFrame.classList.toggle("rulesframeextent");
+            expanderArrow.classList.toggle("arrowmirror");
+            expander.classList.toggle("bottom")
+        };
+
+        rulesFrame.addEventListener("click", expandRules)
+        
     </script>
 </html>

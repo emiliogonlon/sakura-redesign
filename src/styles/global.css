@@ -307,4 +307,20 @@ iframe {
         align-items: center;
         row-gap: var(--spacing-max);
     }
+
+    .txtpic{
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        align-items: center;
+        margin-bottom: 4rem;
+        text-align: initial;
+    }
+    
+    .txtpic img{
+        order: 1;
+        border-radius: var(--br-image);
+        max-height: 40vh;
+        max-width: 100%;
+    }
+
 }
