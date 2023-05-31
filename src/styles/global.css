@@ -160,7 +160,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 0.3em 1em;
-    gap: 15px;
+    gap: var(--spacing-max);
     font-size: var(--primbutton-font-desk-font-size);
     font-weight: var(--primbutton-font-desk-font-weight); 
     background: linear-gradient(266.1deg, #109ad6 -6.5%, #26c7eb 108.13%);
@@ -247,4 +247,57 @@ iframe {
     margin-top: 0;
 }
 
-/* RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+    *{
+        text-align: left;
+    }
+    h1{
+        font-weight: var(--h1-mobile-font-weight);
+        font-size: var(--h1-mobile-font-size);
+        break-after: var(--h1-mobile-paragraph-spacing);
+    }
+    h2 {
+        font-weight: var(--h2-mobile-font-weight);
+        font-size: var(--h2-mobile-font-size);
+    }
+    .tiletitle{
+        font-size: var(--size-mobile-desktop);
+    }
+    p {
+        font-family: var(--body-text-mobile-font-family);
+        font-weight: var(--body-text-mobile-font-weight);
+        line-height: var(--body-text-mobile-line-height);
+        font-size: var(--body-text-mobile-font-size);
+        margin-bottom: var(--body-text-mobile-paragraph-spacing);
+    }
+    input, textarea {
+        font-family: var(--body-text-mobile-font-family);
+        font-size: var(--body-text-mobile-font-size);
+        font-weight: var(--body-text-mobile-font-weight);
+        transition: var(--standard-transition);
+        width: 100%;
+    }
+    input{
+        height: var(--mobile-spacing-min);
+    }
+    label {
+        font-size: var(--helptext-mobile-font-size);
+        font-weight: var(--helptext-mobile-font-weight);
+        font-kerning: var(--helptext-mobile-letter-spacing);
+        text-transform: var(--helptext-mobile-text-case);
+    }
+    button{
+        padding: 0.3em 1em;
+        gap: var(--spacing-max);
+        font-size: var(--primbutton-font-mobile-font-size);
+        font-weight: var(--primbutton-font-mobile-font-weight); 
+        margin: 0.5rem 0;
+        width: max-content;
+        min-height: var(--mobile-spacing-min);
+      }
+
+      .ns {
+        max-width: initial;
+        margin: 3rem;
+    }
+}
