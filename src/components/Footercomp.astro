@@ -118,7 +118,7 @@ import SoMe from "../components/SoMe.astro"
         color: var(--subtle);
         font-weight: var(--footer-desk-fine-print-font-weight);
         font-size: 0.8rem;
-        line-height: var(--footer-desk-fine-print-paragraph-spacing);
+        margin-bottom: var(--footer-desk-fine-print-paragraph-spacing);
     }
     #footsome {
         grid-row:3;
@@ -128,5 +128,25 @@ import SoMe from "../components/SoMe.astro"
         font-weight: var(--footer-desk-listtitle-font-weight);
         font-size: var(--footer-desk-listtitle-font-size);
         margin-top: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        #footmid{
+            flex-direction: column;
+        }
+
+        #fmidlef{
+            width: auto;
+        }
+
+        #fmidlef ul li{
+            margin: 0;
+            gap: var(--spacing-min);
+        }
+        #fmidlef ul li a, .footlisttitle{
+            display: flex;
+            height: var(--mobile-spacing-min);
+            align-items: center;
+        }
     }
 </style>
