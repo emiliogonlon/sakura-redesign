@@ -35,3 +35,62 @@
   #interactions{
     align-self: flex-end;
   }
+
+  #your-desktop{
+    color: inherit;
+    margin: 0;
+  }
+
+  #your-mobile{
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .richlistitem {
+      display: grid;
+      grid: 3fr 1fr / 200px auto;
+      align-items: center;
+      height: 20vh;
+    }
+    .richlistimgcont{
+      width: auto;
+      grid-row: 1/3;
+    }
+    .richlistdata{
+      display: block;
+      margin: 0;
+      /* max-height: 100%; */
+      min-height: 0;
+      align-self:flex-end;
+    }
+    .tiledesc{
+      text-overflow: ellipsis;
+    }
+    .details{
+      font-size: (--details-mobile-font-size);
+    }
+    #interactions{
+      grid-column: 2/3;
+      display: grid;
+      grid: 1rem 1fr / 1;
+      /* gap: var(--spacing-normal); */
+    }
+    #interactions .helptext{
+      margin: 0;
+      grid-row: 1;
+      font-size: (--helptext-mobile-font-size);
+    }
+    #interactions button, #interactions .sharefav{
+      grid-row: 2;
+    }
+    #sharelabel{
+      display: none;
+    }
+    #your-desktop{
+      display: none;
+    }
+    #your-mobile{
+      display: inline;
+      color: inherit;
+    }
+  }
