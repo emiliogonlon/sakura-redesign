@@ -248,6 +248,9 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
+    *{
+        text-align: left;
+    }
     h1{
         font-weight: var(--h1-mobile-font-weight);
         font-size: var(--h1-mobile-font-size);
@@ -283,15 +286,18 @@ iframe {
         font-kerning: var(--helptext-mobile-letter-spacing);
         text-transform: var(--helptext-mobile-text-case);
     }
-    .primaer_knap {
+    button{
         padding: 0.3em 1em;
         gap: var(--spacing-max);
         font-size: var(--primbutton-font-mobile-font-size);
         font-weight: var(--primbutton-font-mobile-font-weight); 
         margin: 0.5rem 0;
         width: max-content;
-        cursor: pointer;
-        color: var(--primbutton-text);
-        transition: var(--standard-transition);
+        min-height: var(--mobile-spacing-min);
       }
+
+      .ns {
+        max-width: initial;
+        margin: 3rem;
+    }
 }
