@@ -29,6 +29,11 @@
 }
 
 @media screen and (max-width: 1024px){
+    .notice {
+        font-size: var(--size-third-mobile);
+        letter-spacing: var(--kerning-broad);
+        text-align: center;
+    }
     #origamihund{
         width: 30%;
         height:10%;

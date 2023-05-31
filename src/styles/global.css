@@ -71,7 +71,7 @@ p {
 }
 
 .und {
-    text-decoration: var(--deco-underline);
+    font-weight: bold;
     font-style: inherit;
     color: inherit;
 }
@@ -296,8 +296,15 @@ iframe {
         min-height: var(--mobile-spacing-min);
       }
 
-      .ns {
+    .ns {
         max-width: initial;
         margin: 3rem;
+    }
+
+    .compacttilegallery {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        row-gap: var(--spacing-max);
     }
 }
