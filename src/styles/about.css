@@ -60,3 +60,16 @@
 .textbutton {
     margin: auto;
 }
+
+@media screen and (max-width: 1024px){
+    .story{
+        text-align: left;
+    }
+    #sponsorsmosaic{
+        justify-content: space-evenly;
+    }
+    #rulesframe ol {
+        max-height: 7rem;
+        overflow: clip;
+    }
+}
