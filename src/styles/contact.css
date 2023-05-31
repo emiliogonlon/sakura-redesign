@@ -25,3 +25,12 @@
   display: grid;
   gap: var(--spacing-max);
 }
+
+@media screen and (max-width: 1042px) {
+  #contactinfo{
+    flex-flow: column;
+    margin: 0 auto 25rem;
+    max-width: max-content;
+    gap: var(--spacing-max);
+  }
+}

@@ -252,6 +252,7 @@ iframe {
         text-align: left;
     }
     h1{
+        text-align: center;
         font-weight: var(--h1-mobile-font-weight);
         font-size: var(--h1-mobile-font-size);
         break-after: var(--h1-mobile-paragraph-spacing);
