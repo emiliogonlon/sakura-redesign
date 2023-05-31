@@ -1,0 +1,69 @@
+---
+const evtime = Astro.props.time;
+const evloc = Astro.props.location;
+const locref = Astro.props.locationlink;
+const title = Astro.props.title;
+const imgsrc = Astro.props.imgsrc;
+const imgalt = Astro.props.imgalt;
+---
+
+<li class="richlistitem">
+  <div class="richlistimgcont">
+    <img src={imgsrc} alt={imgalt} />
+  </div>
+  <div class="richlistdata">
+    <h3 class="tiletitle">Ambassador</h3>
+    <slot class="tiledesc" name="tiletext" />
+    <div class="details">
+      <span>{evtime}</span><span> ●</span><a href={locref} slot>{evloc}</a>
+    </div>
+  </div>
+  <div id="interactions">
+    <p class="helptext">Christian Andersen</p>
+
+    <div class="sharefav"></div>
+  </div>
+</li>
+
+<style>
+  .richlistitem {
+    display: flex;
+    background-color: var(--bg-rich-list-item);
+    box-shadow: var(--rich-list-item-shadow-x) var(--rich-list-item-shadow-y)
+      var(--rich-list-item-shadow-blur) var(--rich-list-item-shadow-spread)
+      var(--rich-list-item-shadow-color);
+    border-radius: var(--br-image);
+    text-align: left;
+    padding: var(--spacing-min);
+    height: 12.5rem;
+    align-items: center;
+    gap: var(--spacing-normal);
+    margin: 20px;
+  }
+  .richlistimgcont {
+    display: flex;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    border-radius: var(--br-thumbnail);
+    flex-shrink: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .richlistdata {
+    margin-top: auto;
+    flex-grow: 1;
+  }
+  .sharefav {
+    display: flex;
+    gap: var(--spacing-normal);
+  }
+
+  #interactions {
+    align-self: flex-end;
+  }
+</style>
