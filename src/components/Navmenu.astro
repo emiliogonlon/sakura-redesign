@@ -4,13 +4,6 @@ import SoMe from "../components/SoMe.astro"
 ---
 
 <ul id="navmenu">
-    <li id="hamburgercontainer">
-        <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="38" height="6" fill="#D9D9D9"/>
-            <rect y="14" width="38" height="6" fill="#D9D9D9"/>
-            <rect y="28" width="38" height="6" fill="#D9D9D9"/>
-        </svg>
-    </li>
     <Navbutton label="Home" path="index.html"></Navbutton>
     <Navbutton label="tests" path="tests.html"></Navbutton>
     <Navbutton label="Programme" path="programme.html"></Navbutton>
@@ -23,6 +16,7 @@ import SoMe from "../components/SoMe.astro"
 </ul>
 <style>
     ul {
+        animation: expandnav var(--standard-transition) ease-in-out both;
         display: grid;
         grid-template-columns: auto;
         list-style: none;
@@ -30,7 +24,7 @@ import SoMe from "../components/SoMe.astro"
         max-height: 100vh;
         /* justify-content: start; */
         gap: var(--spacing-normal);
-        background-color: var(--nav-currentwhite);
+        background-color: var(--bg-navbar);
         /* opacity: 50%; */
         margin: 0 0 0 33%;
         padding: 5% 0;
@@ -42,5 +36,14 @@ import SoMe from "../components/SoMe.astro"
     #somerow{
         margin-right: var(--spacing-normal);
         height: min-content;
+    }
+
+    @keyframes expandnav {
+        from{
+            transform: scaleX(0%);
+        }
+        to{
+            transform: scaleX(100%);
+        }
     }
 </style>
