@@ -42,4 +42,25 @@ const path = Astro.props.path
         color: var(--white-text);
         scale: var(--activeskala);
     }
+
+    @media screen and (max-width: 1024px) {
+        li {
+            /* display: flex; */
+            /* width: 100%; */
+            /* border: 1px solid black; */
+            font-weight: var(--navbutton-mobile-font-weight);
+            font-size: var(----navbutton-mobile-font-size);
+            text-transform: var(--navbutton-mobile-text-case);
+            transition: var(--standard-transition);
+        }
+        a {
+            /* display: flex; */
+            /* border: 1px solid red; */
+            width: 100%;
+            justify-content: right;
+            padding: 0 var(--spacing-normal);
+            text-decoration: var(--navbutton-mobile-text-decoration);
+            color: var(--nav-text);
+        }
+    }
 </style>

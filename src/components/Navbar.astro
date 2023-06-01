@@ -2,7 +2,7 @@
 import Navbutton from "../components/Navbutton.astro"
 ---
 
-<ul>
+<ul id="navbar">
     <Navbutton label="Home" path="index.html"></Navbutton>
     <Navbutton label="tests" path="tests.html"></Navbutton>
     <Navbutton label="Programme" path="programme.html"></Navbutton>
@@ -13,8 +13,7 @@ import Navbutton from "../components/Navbutton.astro"
 
 <style>
     ul {
-        display: flex;
-        flex-direction: row;
+        display: none;
         width: 100%;
         height: 32px;
         justify-content: center;
@@ -24,4 +23,13 @@ import Navbutton from "../components/Navbutton.astro"
         padding: 0;
         margin: 0;
     }
+
+    /* @media screen and (max-width: 1024px) {
+        ul{
+            /* position: absolute; */
+            flex-direction: column;
+            bottom: 0;
+        }
+        
+    } */
 </style>
