@@ -1,0 +1,19 @@
+# pack-refs with: peeled fully-peeled sorted 
+258457c21d3c60b6ad594cfe56b47b7f6ce8ddb3 refs/heads/Contact
+06c7eb7a7c874116d67206b562f63a538f6d3e0a refs/heads/Info-map
+9363b2f3edbafbb24aa1b91dfc92b60a55a32bd8 refs/heads/Navbar-desk
+05188f6170649f8461f2684456ba83277455404c refs/heads/about
+70195736fed035ef4ebb98f1ff3ada5c1322b8f9 refs/heads/billeder
+7d3ec4bbd93761763547b8bab1dd841064d0a878 refs/heads/component-styling
+eb77e0186efaaa4e72b4cd693aad22f354907f83 refs/heads/footer
+735284b5fb195aaeb3fac82c4e5d4c7ae3595d79 refs/heads/footer-tree
+ee37f00b6c39797eed086f4964e0bc9019dd26f9 refs/heads/hero-section
+8adb94eda451251fc0045ef5f749d697200f7984 refs/heads/index-page
+90ffcd2cccec885310b8d565ece8ac75633d22ab refs/heads/index-styling
+5dc4b482ee1bf6d7fc242da95ba519c04bc1f94a refs/heads/integration
+953230da9449d3363eb949f3df73c21dc04b99ce refs/heads/logo
+6fc70b4b098b1848712a4c8fdccdb264cee7bfcf refs/heads/main
+deacac50b41aebdf79ed3f81b92c6e1de62da471 refs/heads/news-archive
+d3e4db1d255861ea793edb64e77450ef8b01b8a9 refs/heads/programme-styling
+897584a86156018f89547c68ac09e952720d911f refs/heads/sitemap
+bdae8f7b0aaf69934b175b097b49bcdbd56df0a9 refs/heads/web-deployment
