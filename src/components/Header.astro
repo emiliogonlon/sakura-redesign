@@ -33,35 +33,6 @@ import SoMe from "../components/SoMe.astro";
     </nav>
 </div>
 
-<script>
-
-    var navBarElem = document.getElementById('navbar'); 
-    var navMenuElem = document.getElementById('menucontainer'); 
-    var navElem = document.querySelector('nav');
-    var hamburgerMenu = document.getElementById('hamburgermenu');
-    var soMeDesk = document.getElementById('someholder');
-    
-    if (window.innerWidth > 1024) {
-        navBarElem.style.display = 'flex';
-        hamburgerMenu.style.display = 'none';
-        navMenuElem.style.display = 'none';
-    } else {
-        navElem.classList.add('displaynone');
-    }
-
-    function toggleNavMenu() {
-        navElem.classList.toggle('displayflex');
-        navElem.classList.toggle('displaynone')
-    }
-
-    hamburgerMenu.addEventListener('click', toggleNavMenu)
-
-    if (navElem.classList.value === 'displayflex') {
-        navHamburger.addEventListener('mouseout', toggleNavMenu)
-    }
-    
-    </script>
-
 <style>
     #header {
         display: grid;
@@ -88,6 +59,9 @@ import SoMe from "../components/SoMe.astro";
             grid-template-rows: 10vh;
             z-index: 90;
         }
+        #headertop a{
+            display: flex;
+        }
         #someholder{
             display: none;
         }
@@ -113,3 +87,28 @@ import SoMe from "../components/SoMe.astro";
         }
     }
 </style>
+
+<script>
+
+    var navBarElem = document.getElementById('navbar'); 
+    var navMenuElem = document.getElementById('menucontainer'); 
+    var navElem = document.querySelector('nav');
+    var hamburgerMenu = document.getElementById('hamburgermenu');
+    var soMeDesk = document.getElementById('someholder');
+    var soMeMobile = document.getElementById('somemobilerow');
+    
+    if (window.innerWidth > 1024) {
+        navBarElem.style.display = 'flex';
+        hamburgerMenu.style.display = 'none';
+    } else {
+        navElem.classList.add('displaynone');
+    }
+
+    function toggleNavMenu() {
+        navElem.classList.toggle('displayflex');
+        navElem.classList.toggle('displaynone');
+    }
+
+    hamburgerMenu.addEventListener('click', toggleNavMenu)
+
+    </script>

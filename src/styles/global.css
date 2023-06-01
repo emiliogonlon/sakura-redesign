@@ -251,6 +251,10 @@ iframe {
     *{
         text-align: left;
     }
+
+    header{
+        height: 10vh;
+    }
     h1{
         text-align: center;
         font-weight: var(--h1-mobile-font-weight);
