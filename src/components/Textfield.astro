@@ -1,24 +1,26 @@
 ---
-const type = Astro.props.type 
-const placeholder = Astro.props.placeholder
+const type = Astro.props.type;
+const placeholder = Astro.props.placeholder;
 ---
 
 <input type={type} placeholder={placeholder} />
 
 <style>
-    input {
-        border: none;
-        border-radius: var(--br-textfield);
-        background: var(--bg-textfield);
-        height: 2.5em;
-        padding: 5px 10px;
-        font-family: var(--body-text-desktop-font-family);
-        font-size: var(--body-text-desktop-font-size);
-        font-weight: var(--body-text-desktop-font-weight);
-    }
+  input {
+    border: none;
+    border-radius: var(--br-textfield);
+    background: var(--bg-textfield);
+    height: 2.5em;
+    padding: 5px 10px;
+    font-family: var(--body-text-desktop-font-family);
+    font-size: var(--body-text-desktop-font-size);
+    font-weight: var(--body-text-desktop-font-weight);
+  }
 
-    input:focus {
-        outline: none;
-        box-shadow: inset var(--active-shadow-x) var(--active-shadow-y) var(--active-shadow-blur) var(--active-shadow-spread) var(--active-shadow-color);
-    }
+  input:focus {
+    outline: none;
+    box-shadow: inset var(--active-shadow-x) var(--active-shadow-y)
+      var(--active-shadow-blur) var(--active-shadow-spread)
+      var(--active-shadow-color);
+  }
 </style>
