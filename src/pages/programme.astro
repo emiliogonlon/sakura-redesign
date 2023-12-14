@@ -3,7 +3,7 @@
 import Header from "../components/Header.astro";
 import Footercomp from "../components/Footercomp.astro";
 import Textbutton from "../components/Textbutton.astro";
-import Thatsall from "../components/Thatsall.astro"
+import Thatsall from "../components/Thatsall.astro";
 ---
 
 <html lang="en">
@@ -25,23 +25,56 @@ import Thatsall from "../components/Thatsall.astro"
       <h1>2024 Programme</h1>
       <Textbutton href="#">
         <span slot="label">Sort by</span>
-        <svg slot="icon" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.3 6.50684C16.5124 6.50684 17.6102 6.54894 18.2855 6.62733C18.296 6.62733 18.9139 6.705 19.1199 6.75508C19.4172 6.83348 19.6688 6.97502 19.8291 7.15213C19.9438 7.29367 20 7.4432 20 7.59925C19.9895 7.76185 19.8174 8.06743 19.7367 8.18792C19.2346 8.98201 17.5868 10.4998 16.5815 11.0819C16.4211 11.1806 16.2269 11.2873 16.1812 11.3156C15.9284 11.4361 15.6206 11.5 15.2894 11.5C14.991 11.5 14.6937 11.4434 14.4538 11.3294C14.3292 11.275 14.1473 11.1667 14.0641 11.1159L14.0196 11.0884C12.978 10.4932 11.4121 9.01032 10.9089 8.25833C10.8982 8.25833 10.6475 7.88323 10.5968 7.6569L10.5882 7.59925V7.57095C10.5882 7.24431 10.8855 6.93945 11.3665 6.78339C11.6298 6.69847 12.3952 6.62008 12.4069 6.61282C13.0927 6.54894 14.1449 6.50684 15.3 6.50684ZM4.70553 6.54421C5.18478 6.54421 5.57926 6.76764 5.63317 7.05585L5.63945 7.12343L5.89575 9.92154C5.89575 10.3295 5.36325 10.6597 4.70553 10.6597C4.08892 10.6597 3.58133 10.3695 3.52029 9.99706L3.51414 9.92154L3.77161 7.12343C3.77161 6.80334 4.18942 6.54421 4.70553 6.54421ZM4.71173 0.5C5.00783 0.5 5.30509 0.556615 5.54618 0.669846C5.65004 0.715665 5.79368 0.798626 5.88681 0.854404L5.98037 0.911551C7.02079 1.50747 8.58785 2.98963 9.09109 3.7416C9.10075 3.7416 9.35232 4.1173 9.4032 4.34373L9.41177 4.40139V4.4297C9.41177 4.7556 9.11333 5.06045 8.6335 5.21651C8.37017 5.30215 7.60478 5.37982 7.59308 5.38708C6.90727 5.45095 5.85514 5.49305 4.70003 5.49305C3.48757 5.49305 2.38981 5.45095 1.71453 5.37256C1.70282 5.37256 1.08606 5.2949 0.880085 5.24481C0.582823 5.16715 0.331202 5.02488 0.170868 4.84778C0.0561757 4.70624 0 4.55672 0 4.40139C0.0105329 4.23807 0.182571 3.93322 0.262153 3.81273C0.765393 3.01794 2.41204 1.50021 3.41852 0.918809C3.57886 0.819369 3.77313 0.712671 3.81877 0.684363C4.0704 0.563874 4.37936 0.5 4.71173 0.5ZM15.2947 1.34028C15.9113 1.34028 16.4179 1.63055 16.4788 2.00296L16.4849 2.07847L16.2286 4.87664C16.2286 5.19675 15.8108 5.45588 15.2947 5.45588C14.8155 5.45588 14.421 5.23244 14.3671 4.94423L14.3608 4.87664L14.1033 2.07847C14.1033 1.67054 14.637 1.34028 15.2947 1.34028Z" fill="#535252"/>
-          </svg>          
+        <svg
+          slot="icon"
+          width="20"
+          height="12"
+          viewBox="0 0 20 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.3 6.50684C16.5124 6.50684 17.6102 6.54894 18.2855 6.62733C18.296 6.62733 18.9139 6.705 19.1199 6.75508C19.4172 6.83348 19.6688 6.97502 19.8291 7.15213C19.9438 7.29367 20 7.4432 20 7.59925C19.9895 7.76185 19.8174 8.06743 19.7367 8.18792C19.2346 8.98201 17.5868 10.4998 16.5815 11.0819C16.4211 11.1806 16.2269 11.2873 16.1812 11.3156C15.9284 11.4361 15.6206 11.5 15.2894 11.5C14.991 11.5 14.6937 11.4434 14.4538 11.3294C14.3292 11.275 14.1473 11.1667 14.0641 11.1159L14.0196 11.0884C12.978 10.4932 11.4121 9.01032 10.9089 8.25833C10.8982 8.25833 10.6475 7.88323 10.5968 7.6569L10.5882 7.59925V7.57095C10.5882 7.24431 10.8855 6.93945 11.3665 6.78339C11.6298 6.69847 12.3952 6.62008 12.4069 6.61282C13.0927 6.54894 14.1449 6.50684 15.3 6.50684ZM4.70553 6.54421C5.18478 6.54421 5.57926 6.76764 5.63317 7.05585L5.63945 7.12343L5.89575 9.92154C5.89575 10.3295 5.36325 10.6597 4.70553 10.6597C4.08892 10.6597 3.58133 10.3695 3.52029 9.99706L3.51414 9.92154L3.77161 7.12343C3.77161 6.80334 4.18942 6.54421 4.70553 6.54421ZM4.71173 0.5C5.00783 0.5 5.30509 0.556615 5.54618 0.669846C5.65004 0.715665 5.79368 0.798626 5.88681 0.854404L5.98037 0.911551C7.02079 1.50747 8.58785 2.98963 9.09109 3.7416C9.10075 3.7416 9.35232 4.1173 9.4032 4.34373L9.41177 4.40139V4.4297C9.41177 4.7556 9.11333 5.06045 8.6335 5.21651C8.37017 5.30215 7.60478 5.37982 7.59308 5.38708C6.90727 5.45095 5.85514 5.49305 4.70003 5.49305C3.48757 5.49305 2.38981 5.45095 1.71453 5.37256C1.70282 5.37256 1.08606 5.2949 0.880085 5.24481C0.582823 5.16715 0.331202 5.02488 0.170868 4.84778C0.0561757 4.70624 0 4.55672 0 4.40139C0.0105329 4.23807 0.182571 3.93322 0.262153 3.81273C0.765393 3.01794 2.41204 1.50021 3.41852 0.918809C3.57886 0.819369 3.77313 0.712671 3.81877 0.684363C4.0704 0.563874 4.37936 0.5 4.71173 0.5ZM15.2947 1.34028C15.9113 1.34028 16.4179 1.63055 16.4788 2.00296L16.4849 2.07847L16.2286 4.87664C16.2286 5.19675 15.8108 5.45588 15.2947 5.45588C14.8155 5.45588 14.421 5.23244 14.3671 4.94423L14.3608 4.87664L14.1033 2.07847C14.1033 1.67054 14.637 1.34028 15.2947 1.34028Z"
+            fill="#535252"></path>
+        </svg>
       </Textbutton>
       <section class="richlistgroup">
         <h2 class="richlisttitle">Saturday 18 March</h2>
         <ul class="richlist" id="listoutput">
-          <template imgsrc="Gordillo.jpg" imgalt="elbita" time="saturday 15 15.30" location="washroom" locationlink="#" title="a fun event">
-            <span slot="tiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, at placeat fugit perferendis reiciendis tempore excepturi, explicabo distinctio fugiat doloribus id laborum? Voluptatem illo voluptatum dolorem necessitatibus ab officiis. Nemo.</span>
+          <template
+            imgsrc="Gordillo.jpg"
+            imgalt="elbita"
+            time="saturday 15 15.30"
+            location="washroom"
+            locationlink="#"
+            title="a fun event"
+          >
+            <span slot="tiletext"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              at placeat fugit perferendis reiciendis tempore excepturi,
+              explicabo distinctio fugiat doloribus id laborum? Voluptatem illo
+              voluptatum dolorem necessitatibus ab officiis. Nemo.</span
+            >
           </template>
         </ul>
       </section>
       <section>
         <h2>Sunday 19 March</h2>
         <ul class="richlist">
-          <template imgsrc="Gordillo.jpg" imgalt="elbita" time="saturday 15 15.30" location="washroom" locationlink="#" title="a fun event">
-            <span slot="tiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, at placeat fugit perferendis reiciendis tempore excepturi, explicabo distinctio fugiat doloribus id laborum? Voluptatem illo voluptatum dolorem necessitatibus ab officiis. Nemo.</span>
+          <template
+            imgsrc="Gordillo.jpg"
+            imgalt="elbita"
+            time="saturday 15 15.30"
+            location="washroom"
+            locationlink="#"
+            title="a fun event"
+          >
+            <span slot="tiletext"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              at placeat fugit perferendis reiciendis tempore excepturi,
+              explicabo distinctio fugiat doloribus id laborum? Voluptatem illo
+              voluptatum dolorem necessitatibus ab officiis. Nemo.</span
+            >
           </template>
         </ul>
       </section>
@@ -51,26 +84,28 @@ import Thatsall from "../components/Thatsall.astro"
       <Footercomp />
     </footer>
   </body>
-	<script>
-		document.getElementById('programme.html').style.backgroundColor = "var(--nav-bg-current)";
-		document.getElementById('programme.html').firstChild.style.color = "var(--nav-currentwhite)"
+  <script>
+    document.getElementById("programme.html").style.backgroundColor =
+      "var(--nav-bg-current)";
+    document.getElementById("programme.html").firstChild.style.color =
+      "var(--nav-currentwhite)";
 
     // DATABASE INTEGRATION
     // I don't think this is the most optimal way to implement the database using components, but it is the only one I could fiure out how to implement.
 
-    console.log("Elba Gordipsum")
+    console.log("Elba Gordipsum");
 
-      fetch('https://emil42x2-7cd5.restdb.io/rest/programme', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-apikey': '64750032e3b58f2cb4300c83'
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
+    fetch("https://emil42x2-7cd5.restdb.io/rest/programme", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "x-apikey": "64750032e3b58f2cb4300c83",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
         let output = '<ul class="richlist" id="listoutput">';
-        data.forEach(function(programme) {
+        data.forEach(function (programme) {
           output += `
           <li class="richlistitem">
             <div class="richlistimgcont">
@@ -109,9 +144,9 @@ import Thatsall from "../components/Thatsall.astro"
           </li>
           `;
         });
-        output += '</ul>';
-        document.getElementById('listoutput').innerHTML = output;
+        output += "</ul>";
+        document.getElementById("listoutput").innerHTML = output;
       })
-      .catch(err => console.log(err));
-	</script>
+      .catch((err) => console.log(err));
+  </script>
 </html>
